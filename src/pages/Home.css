@@ -1,0 +1,41 @@
+@keyframes spread {
+  0% {
+    letter-spacing: normal;
+    opacity: 0;
+  }
+  50% {
+    letter-spacing: 3rem;
+    opacity: 0.5;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+.animate-spread {
+  animation: spread 3s ease-in-out;
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.animated-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(58, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 33%,
+    rgba(89, 51, 252, 1) 62%,
+    rgba(252, 176, 69, 1) 90%
+  );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}

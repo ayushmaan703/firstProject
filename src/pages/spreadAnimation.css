@@ -1,0 +1,18 @@
+@keyframes spread {
+  0% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+  50% {
+    letter-spacing: 2rem;
+    opacity: 0.7;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+.animated-heading {
+  animation: spread 3s ease-in-out;
+}
