@@ -33,7 +33,7 @@ function Navbar() {
       >
         <div className="flex gap-2 justify-center items-center space-x-2">
           <img
-            src="public\logo-CCalxPd4.png"
+            src="/logo-CCalxPd4.png"
             className="w-50 h-8"
             alt="logo"
           />
