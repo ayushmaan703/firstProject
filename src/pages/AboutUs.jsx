@@ -3,7 +3,7 @@ import "./spreadAnimation.css";
 export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false);
   const [isLargeScreen, setIsLargeScreen] = useState(false);
-
+var i=1
   useEffect(() => {
     const handleResize = () => {
       setIsLargeScreen(window.innerWidth >= 1024);
@@ -13,8 +13,9 @@ export default function AboutUs() {
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
+  }, [isVisible,setIsVisible]);
+  console.log("l",isLargeScreen,i++);
+  
   useEffect(() => {
     const handleScroll = () => {
       if (
@@ -31,11 +32,10 @@ export default function AboutUs() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isLargeScreen,isVisible]);
+  console.log("v",isVisible,i);
 
-  const handleToggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+
   return (
     <>
       <div
@@ -43,7 +43,7 @@ export default function AboutUs() {
         className="flex justify-center flex-col items-center mx-10 my-10 border-b-2 border-black p-10"
       >
         <p
-          className={` text-4xl sm:text-5xl font-thin border-b-2 border-black p-3 mt-20  mb-20 ${
+          className={` text-4xl sm:text-5xl font-light my-4 sm:m-8 border-b-2 border-black p-3 mt-20 mb-20 ${
             isVisible
               ? isLargeScreen
                 ? "animated-heading"
