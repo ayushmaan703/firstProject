@@ -2,10 +2,25 @@ import React, { useEffect, useState } from "react";
 import "./spreadAnimation.css";
 export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 1500) {
+      if (
+        (isLargeScreen && window.scrollY > 1500) ||
+        (!isLargeScreen && window.scrollY > 3000)
+      ) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -28,8 +43,12 @@ export default function AboutUs() {
         className="flex justify-center flex-col items-center mx-10 my-10 border-b-2 border-black p-10"
       >
         <p
-          className={` text-5xl font-thin border-b-2 border-black p-3 mt-20  mb-20 ${
-            isVisible ? "animated-heading" : ""
+          className={` text-4xl sm:text-5xl font-thin border-b-2 border-black p-3 mt-20  mb-20 ${
+            isVisible
+              ? isLargeScreen
+                ? "animated-heading"
+                : "animate-smallSpread"
+              : ""
           }`}
         >
           ABOUT US

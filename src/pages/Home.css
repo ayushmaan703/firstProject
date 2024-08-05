@@ -12,9 +12,26 @@
     opacity: 1;
   }
 }
-
 .animate-spread {
   animation: spread 3s ease-in-out;
+}
+@keyframes smallSpread {
+  0% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+  50% {
+    letter-spacing: 0.5rem;
+    opacity: 0.5;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
+.animate-smallSpread {
+  animation: smallSpread 3s ease-in-out;
 }
 @keyframes gradient {
   0% {

@@ -2,10 +2,25 @@ import React, { useEffect, useState } from "react";
 import "./spreadAnimation.css";
 export default function Products() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 250) {
+      if (
+        (isLargeScreen && window.scrollY > 250) ||
+        (!isLargeScreen && window.scrollY > 250)
+      ) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -18,10 +33,6 @@ export default function Products() {
     };
   }, []);
 
-  const handleToggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <>
       <div
@@ -31,7 +42,11 @@ export default function Products() {
         <div className="flex flex-col justify-center items-center mb-10 ">
           <span
             className={`font-bold text-4xl sm:text-5xl mt-10 sm:mt-20 font-serif text-center border-b border-black p-3 ${
-              isVisible ? "animated-heading" : ""
+              isVisible
+                ? isLargeScreen
+                  ? "animated-heading"
+                  : "animate-smallSpread"
+                : ""
             }`}
           >
             PRODUCTS

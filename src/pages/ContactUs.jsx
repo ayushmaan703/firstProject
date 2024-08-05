@@ -4,10 +4,25 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 
 export default function ContactUs() {
   const [isVisible, setIsVisible] = useState(false);
+  const [isLargeScreen, setIsLargeScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 1024);
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 2300) {
+      if (
+        (isLargeScreen && window.scrollY > 2300) ||
+        (!isLargeScreen && window.scrollY > 3900)
+      )  {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -31,7 +46,11 @@ export default function ContactUs() {
       >
         <p
           className={`text-4xl sm:text-5xl font-light my-4 sm:m-8 border-b-2 border-black p-3 ${
-            isVisible ? "animated-heading" : ""
+            isVisible
+              ? isLargeScreen
+                ? "animated-heading"
+                : "animate-smallSpread"
+              : ""
           }`}
         >
           CONTACT US

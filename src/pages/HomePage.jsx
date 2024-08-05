@@ -8,7 +8,7 @@ export default function Home() {
         id="home"
         className="bg-green-400 h-screen w-full flex flex-col justify-center items-center animated-bg"
       >
-        <div className="animate-spread text-6xl sm:text-9xl font-extrabold text-white">
+        <div className="animate-smallSpread sm:animate-spread text-4xl sm:text-9xl font-extrabold text-white">
           <div className="flex justify-center items-center flex-col spa">
             <span>SHEETAL </span>
             <span>ENTERPRISES</span>
