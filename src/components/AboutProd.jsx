@@ -3,7 +3,7 @@ import React, { useState } from "react";
 function AboutProd({ heading, img, details }) {
   return (
     <>
-      <div className="flex flex-col items-center" 
+      <div className="flex flex-col items-center m-3 p-3 " 
       >
         <span className="font-thin mb-1 mt-7 mx-7 text-xl sm:text-2xl">
           {heading}

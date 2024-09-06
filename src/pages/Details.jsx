@@ -8,170 +8,169 @@ import MicroPurposeRange from "../constants/products/MicroPurposeRange.js";
 export default function Details() {
   return (
     <div className="flex flex-col  h-full w-full">
-      <div className=" font-bold text-2xl sm:text-3xl  font-serif text-left  p-3   ">
-        <span className="border-b-2 border-b-black font-bold">
-          1. Low voltage AC Drives :
-        </span>
-      </div>
-      <div className=" p-3 ml-10 ">
-        <span className="text-xl  border-b border-b-black font-bold">
-          1. General Purpose Range :
-        </span>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 gap-5">
-          {GeneralPurposeRange.map((prod) => (
-            <AboutProd
-              key={prod.id}
-              heading={prod.heading}
-              img={prod.img}
-              details={prod.description}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="   p-3 ml-10 ">
-        <span className=" text-xl  border-b border-b-black font-bold">
-          2. Micro Purpose Range :
-        </span>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 gap-5">
-          {MicroPurposeRange.map((prod) => (
-            <AboutProd
-              key={prod.id}
-              heading={prod.heading}
-              img={prod.img}
-              details={prod.description}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="   p-3 ml-10 ">
-        <span className=" text-xl  border-b border-b-black font-bold">
-          3. Machinery Purpose Range :
-        </span>
-        <div className="w-full grid grid-cols-3 sm:grid-cols-3 xl:grid-cols-6 gap-5">
-          {MachineryPurposeRange.map((prod) => (
-            <AboutProd
-              key={prod.id}
-              heading={prod.heading}
-              img={prod.img}
-              details={prod.description}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="  p-3 ml-10 ">
-        <span className="text-xl  border-b border-b-black font-bold">
-          4. Industrial Purpose Range :
-        </span>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-4 gap-5">
-          {IndustrialPurposeRange.map((prod) => (
-            <AboutProd
-              key={prod.id}
-              heading={prod.heading}
-              img={prod.img}
-              details={prod.description}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="   p-3 ml-10 ">
-        <span className="text-xl  border-b border-b-black font-bold">
-          5. Industry Specific Purpose Range :
-        </span>
-        <div className="w-full grid grid-cols-3 sm:grid-cols-3 xl:grid-cols-6 gap-5">
-          {IndustrySpecificPurposeRange.map((prod) => (
-            <AboutProd
-              key={prod.id}
-              heading={prod.heading}
-              img={prod.img}
-              details={prod.description}
-            />
-          ))}
-        </div>
-      </div>
-      <div className="   p-3 ml-10 ">
-        <span className="border-b border-b-black font-bold">
-          6. Legacy Purpose Range :
-        </span>
-        <div className=" ml-5 w-full flex flex-col font-light font-serif ">
-          <span className="my-2"> Legacy drives </span>
-          <span className="my-2">
-            SE has developed a product life cycle management model aimed to
-            provide proactive service offerings for maximizing product's
-            availability and performance. The life cycle phases are active,
-            classic, limited and obsolete. The availability of individual
-            services varies dependent on the drive’s life cycle phase. This
-            model provides not only optimum support to end-users but also a
-            smooth transition to a new drive when the service life of the
-            current drive ends.
+      <div>
+        {/* Section 1: Low Voltage AC Drives */}
+        <div className="font-bold text-2xl sm:text-3xl font-serif text-left p-3">
+          <span className="border-b-2 border-b-black">
+            1. Low Voltage AC Drives:
           </span>
-          <span className="my-3"> LV AC legacy</span>
-          <span className="my-1"> drives ACS50</span>
-          <span className="my-1"> ACS100/140/160</span>
-          <span className="my-1"> ACS200 </span>
-          <span className="my-1"> ACS300/350</span>
-          <span className="my-1"> ACS400</span>
-          <span className="my-1"> ACS501/502/504/506</span>
-          <span className="my-1"> ACS601/604/607/624/627 </span>
-          <span className="my-1"> ACV700 system drives</span>
-          <span className="my-1"> Sami A/B/C</span>
-          <span className="my-1"> Sami Flowstar </span>
-          <span className="my-1"> Sami Microstar </span>
-          <span className="my-1"> Sami Ministar</span>
         </div>
-      </div>
 
-      <div className="    p-3 ml-10 ">
-        <p className="font-bold text-2xl sm:text-3xl  font-serif text-left  p-3 ">
-          2. Low Voltage Products and Systems :
-        </p>
-        <div className="w-full ml-9 ">
-          <div className=" ">
+        {/* General Purpose Range */}
+        <div className="p-3 ml-2 sm:ml-10">
+          <span className="text-lg sm:text-xl border-b border-b-black font-bold">
+            1. General Purpose Range:
+          </span>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mt-3">
+            {GeneralPurposeRange.map((prod) => (
+              <AboutProd
+                key={prod.id}
+                heading={prod.heading}
+                img={prod.img}
+                details={prod.description}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Micro Purpose Range */}
+        <div className="p-3 ml-2 sm:ml-10">
+          <span className="text-lg sm:text-xl border-b border-b-black font-bold">
+            2. Micro Purpose Range:
+          </span>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mt-3">
+            {MicroPurposeRange.map((prod) => (
+              <AboutProd
+                key={prod.id}
+                heading={prod.heading}
+                img={prod.img}
+                details={prod.description}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Machinery Purpose Range */}
+        <div className="p-3 ml-2 sm:ml-10">
+          <span className="text-lg sm:text-xl border-b border-b-black font-bold">
+            3. Machinery Purpose Range:
+          </span>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-3 gap-5 mt-3">
+            {MachineryPurposeRange.map((prod) => (
+              <AboutProd
+                key={prod.id}
+                heading={prod.heading}
+                img={prod.img}
+                details={prod.description}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Industrial Purpose Range */}
+        <div className="p-3 ml-2 sm:ml-10">
+          <span className="text-lg sm:text-xl border-b border-b-black font-bold">
+            4. Industrial Purpose Range:
+          </span>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mt-3">
+            {IndustrialPurposeRange.map((prod) => (
+              <AboutProd
+                key={prod.id}
+                heading={prod.heading}
+                img={prod.img}
+                details={prod.description}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Industry Specific Purpose Range */}
+        <div className="p-3 ml-2 sm:ml-10">
+          <span className="text-lg sm:text-xl border-b border-b-black font-bold">
+            5. Industry Specific Purpose Range:
+          </span>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-3 gap-5 mt-3">
+            {IndustrySpecificPurposeRange.map((prod) => (
+              <AboutProd
+                key={prod.id}
+                heading={prod.heading}
+                img={prod.img}
+                details={prod.description}
+              />
+            ))}
+          </div>
+        </div>
+
+        {/* Legacy Purpose Range */}
+        <div className="p-3 ml-2 sm:ml-10">
+          <span className="border-b border-b-black font-bold">
+            6. Legacy Purpose Range:
+          </span>
+          <div className="ml-3 sm:ml-5 w-full flex flex-col font-light font-serif mt-3">
+            <span className="my-2">Legacy drives</span>
+            <span className="my-2">
+              SE has developed a product life cycle management model aimed to
+              provide proactive service offerings for maximizing product's
+              availability and performance. The life cycle phases are active,
+              classic, limited, and obsolete.
+            </span>
+            <span className="my-3">LV AC legacy drives:</span>
+            <ul className="list-disc list-inside ml-5">
+              <li>ACS50</li>
+              <li>ACS100/140/160</li>
+              <li>ACS200</li>
+              <li>ACS300/350</li>
+              <li>ACS400</li>
+              <li>ACS501/502/504/506</li>
+              <li>ACS601/604/607/624/627</li>
+              <li>ACV700 system drives</li>
+              <li>Sami A/B/C</li>
+              <li>Sami Flowstar</li>
+              <li>Sami Microstar</li>
+              <li>Sami Ministar</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Section 2: Low Voltage Products and Systems */}
+        <div className="p-3 ml-2 sm:ml-10">
+          <p className="font-bold text-2xl sm:text-3xl font-serif text-left p-3">
+            2. Low Voltage Products and Systems:
+          </p>
+          <div className="w-full flex flex-col items-center">
             <img
               src="/lowVoltage.png"
               alt="product"
-              className="w-80% h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 border-4 border-black"
+              className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 border-4 border-black"
             />
-            <span className="m-4 font-light font-serif  ">
+            <span className="m-4 font-light font-serif text-center">
               ABB provides a full range of low voltage solutions to connect,
-              protect, control and measure a wide range of electrical
-              installations, enclosures, switchboards, electronics and
-              electromechanical devices. ABB's soft starters increase a motor's
-              lifetime by protecting it from electrical stresses. They do so by
-              letting you optimize starting currents that with conventional
-              starting methods put lots of stress on the motor. With many
-              built-in motor protection features, your motor is safe in its
-              hands
+              protect, control, and measure a wide range of electrical
+              installations.
             </span>
           </div>
         </div>
-      </div>
-      <div className="   p-3 ml-10 ">
-        <p className="font-bold text-2xl sm:text-3xl  font-serif text-left  p-3 ">
-          3. Standard Low Voltage Motors :
-        </p>
-        <div className="w-full m-9">
-          <div className="  ">
+
+        {/* Section 3: Standard Low Voltage Motors */}
+        <div className="p-3 ml-2 sm:ml-10">
+          <p className="font-bold text-2xl sm:text-3xl font-serif text-left p-3">
+            3. Standard Low Voltage Motors:
+          </p>
+          <div className="w-full flex flex-col items-center">
             <img
               src="/highVoltage.png"
               alt="product"
-              className="w-80% h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 border-4 border-black"
+              className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 border-4 border-black"
             />
-            <span className="m-4 font-light font-serif  ">
+            <span className="m-4 font-light font-serif text-center">
               IEC Low voltage motors are suitable for all industries, all
-              applications - fulfilling all national and international mandatory
-              efficiency regulations. ABB offers two types of standard induction
-              motors: Process performance and General performance motors. ABB’s
-              synchronous motors for general purpose applications are optimized
-              for high reliability and efficiency. Both slow and high speed
-              motors are available and the design has delivered extremely good
-              performance in different types of installations. The motors are
-              connected direct-on-line or fed via variable speed drives. They
-              are perfectly matched with ABB drives, which have proven
-              themselves in numerous applications with superior performance.
+              applications, fulfilling all national and international mandatory
+              efficiency regulations.
             </span>
           </div>
         </div>
       </div>
+
       <div>
         <div>
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-serif text-center border-b border-black ">
