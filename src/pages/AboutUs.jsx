@@ -40,7 +40,8 @@ export default function AboutUs() {
         className="flex flex-col justify-center items-center border-b-2 border-black p-10"
       >
         <p
-          className={` text-4xl sm:text-5xl font-light my-4 sm:m-8 border-b-2 border-black p-3  ${
+          className={` text-4xl sm:text-5xl  my-4 sm:m-8 border-b-2 border-black p-3 
+            font-bold  font-serif text-center  ${
             isVisible
               ? isLargeScreen
                 ? "animated-heading"
@@ -50,28 +51,49 @@ export default function AboutUs() {
         >
           ABOUT US
         </p>
-        <div className=" font-light text-center mb-20">
+        <div className=" font-light font-serif text-center mb-20">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-            nesciunt. Eligendi blanditiis adipisci eum sequi numquam!
-            Reprehenderit modi nam assumenda libero consectetur voluptates
-            accusantium aliquid accusamus at iste? Sed, nulla. Lorem ipsum Lorem
-            ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-            accusantium sint beatae exercitationem dolores hic natus odit non?
-            Iusto voluptatum nobis odit. Minus consequatur saepe omnis animi
-            officia nostrum sapiente!
+            For the 6 years that sheetal enterprises has been in business, the
+            initial 6 years were restricted to distribution of Power Electronic
+            Components such as Diodes, MOSFETS, Thyristors, IGBTSs, Relays,
+            Fuses etc. from IR, Hind Rectifiers, OEN, Bussmann catering to the
+            burgeoning Power electronics industry during that period.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-            nesciunt. Eligendi blanditiis adipisci eum sequi numquam!
-            Reprehenderit modi nam assumenda libero consectetur voluptates
-            accusantium aliquid accusamus at iste? Sed, nulla. Lorem ipsum{" "}
+            Our foray in Industrial Automation started at the end of the last
+            millennium with the distribution of ABB make AC & DC Drives. In the
+            following years we started adapting to the emerging markets and the
+            latest trends in the Automation Industry. Thus we introduced other
+            Automation products such as Sensors, Encoders, PLCs, HMIs,
+            Instrumentation products, Machine Vision inspection, Industrial
+            Safety products, Wireless communication etc. and positioned
+            ourselves as One Stop Source for most of the Industrial Automation
+            products.
           </p>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam,
-            nesciunt. Eligendi blanditiis adipisci eum sequi numquam!
-            Reprehenderit modi nam assumenda libero consectetur voluptates
-            accusantium aliquid accusamus at iste? Sed, nulla. Lorem ipsum{" "}
+            Evolving further we expanded in providing Customized Automation
+            Solutions based on the above products for all verticals & Industries
+            covering Steel, Power, Cement, Railways, Oil & Gas, Mines &
+            Minerals, Paper, Printing, Packaging, Food & Beverages, Engineering,
+            HVAC, Plastics, Chemicals & the latest entrant Solar Power. The list
+            is endless & ever expanding.
+          </p>
+          <p>
+            We realized that providing solution requires further support for
+            implementation and started Panel manufacturing facilities. Panels
+            are manufactured using steel enclosures procured from reputable
+            enclosure manufactures having world class CNC equipment.
+          </p>
+          <p>
+            Automation much like electricity has today become an omnipresent
+            part of our lives at every step. Automation is now deep-seated in
+            the manufacturing processes of all Industries, improving our
+            operations, and making us more efficient.
+          </p>
+          <p>
+            Energy is precious and should be conserved for better future. We do
+            our bit by providing affordable Energy saving solutions for existing
+            machines.
           </p>
         </div>
       </div>

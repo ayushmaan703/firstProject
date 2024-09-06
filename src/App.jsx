@@ -6,6 +6,8 @@ import ContactUs from "./pages/ContactUs";
 import Navbar from "./components/Navbar";
 // import { FaCopyright } from "react-icons/fa6";
 import "../src/pages/Home.css";
+import Details from "./pages/Details";
+
 
 export default function App() {
   return (

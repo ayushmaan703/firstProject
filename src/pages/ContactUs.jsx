@@ -15,7 +15,7 @@ export default function ContactUs() {
 
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, [isVisible,setIsVisible]);
+  }, [isVisible, setIsVisible]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +33,7 @@ export default function ContactUs() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [isLargeScreen,isVisible]);
+  }, [isLargeScreen, isVisible]);
 
   const handleToggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -45,14 +45,14 @@ export default function ContactUs() {
         className="flex flex-col justify-center items-center border-b-2 border-black p-4"
       >
         <p
-          className={`text-4xl sm:text-5xl font-light my-4 sm:m-8 border-b-2 border-black p-3 
-            ${
-              isVisible
-                ? isLargeScreen
-                  ? "animated-heading"
-                  : "animate-smallSpread"
-                : ""
-            }`}
+          className={`text-4xl sm:text-5xl my-4 sm:m-8 border-b-2 border-black p-3 
+           font-bold  font-serif text-center  ${
+             isVisible
+               ? isLargeScreen
+                 ? "animated-heading"
+                 : "animate-smallSpread"
+               : ""
+           }`}
         >
           CONTACT US
         </p>
