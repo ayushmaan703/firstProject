@@ -3,10 +3,12 @@ import AboutProd from "../components/AboutProd";
 import GeneralPurposeRange from "../constants/products/GeneralPurposeRange.js";
 import MotorControlAndDriveProd from "../constants/products/MotorControlAndDriveProd.js";
 import IndustrialPurposeRange from "../constants/products/IndustrialPurposeRange.js";
+import ProcessInstrumentsprod from "../constants/products/ProcessInstrumentsprod.js";
 import IndustrySpecificPurposeRange from "../constants/products/IndustrySpecificPurposeRange.js";
 import MachineryPurposeRange from "../constants/products/MachineryPurposeRange.js";
 import MicroPurposeRange from "../constants/products/MicroPurposeRange.js";
 import MotorControlAndDrives from "../components/MotorControlAndDrives.jsx";
+import ProcessInstruments from "../components/ProcessInstruments.jsx";
 
 export default function Details() {
   return (
@@ -242,9 +244,9 @@ export default function Details() {
             Services:
           </span>
           <div className="my-4">
-            <div className="flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:px-4">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black">
+            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
+              <div className="sm:w-1/2 sm:pr-4 py-3">
+                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
                   CONSULTANCY
                 </span>
                 <p className="mx-4 my-3 font-light font-serif">
@@ -261,14 +263,14 @@ export default function Details() {
                 <img
                   src="/servicesphoto/1.png"
                   alt="consultancy"
-                  className="w-full h-auto border-2 border-black"
+                  className="w-auto h-3/4 border-2 border-black"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:px-4">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black">
+            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
+              <div className="sm:w-1/2 sm:pr-4 py-3">
+                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
                   DESIGN
                 </span>
                 <p className="mx-4 my-3 font-light font-serif">
@@ -281,14 +283,14 @@ export default function Details() {
                 <img
                   src="/servicesphoto/2.png"
                   alt="design"
-                  className="w-full h-auto border-2 border-black"
+                  className="w-auto h-3/4 border-2 border-black"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:px-4">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black">
+            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
+              <div className="sm:w-1/2 sm:pr-4 py-3">
+                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
                   TRAINING
                 </span>
                 <p className="mx-4 my-3 font-light font-serif">
@@ -303,14 +305,14 @@ export default function Details() {
                 <img
                   src="/servicesphoto/3.png"
                   alt="training"
-                  className="w-full h-auto border-2 border-black"
+                  className="w-auto h-3/4 border-2 border-black"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:px-4">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black">
+            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
+              <div className="sm:w-1/2 sm:pr-4 py-3">
+                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
                   COMMISSIONING
                 </span>
                 <p className="mx-4 my-3 font-light font-serif">
@@ -323,14 +325,14 @@ export default function Details() {
                 <img
                   src="/servicesphoto/4.png"
                   alt="commissioning"
-                  className="w-full h-auto border-2 border-black"
+                  className="w-auto h-3/4 border-2 border-black"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:px-4">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black">
+            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
+              <div className="sm:w-1/2 sm:pr-4 py-3">
+                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
                   SUPPORT & AMC
                 </span>
                 <p className="mx-4 my-3 font-light font-serif">
@@ -342,14 +344,14 @@ export default function Details() {
                 <img
                   src="/servicesphoto/5.png"
                   alt="support and AMC"
-                  className="w-full h-auto border-2 border-black"
+                  className="w-auto h-3/4 border-2 border-black"
                 />
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:px-4">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-2xl border-b border-black">
+            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
+              <div className="sm:w-1/2 sm:pr-4 py-3">
+                <span className="font-thin mb-2 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500  rounded-tl-xl ">
                   PLC SYSTEMS PROGRAMMING SOFTWARE DEVELOPMENT
                 </span>
                 <p className="mx-4 my-3 font-light font-serif">
@@ -366,7 +368,7 @@ export default function Details() {
                 <img
                   src="/servicesphoto/6.png"
                   alt="PLC programming"
-                  className="w-full h-auto border-2 border-black"
+                  className="w-auto h-3/4 border-2 border-black"
                 />
               </div>
             </div>
@@ -595,6 +597,21 @@ export default function Details() {
               alt="product"
               className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 mx-auto border-4 border-black"
             />
+          </div>
+        </div>
+        <div>
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-serif text-center border-b border-black">
+            Process Instruments:
+          </span>
+          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 gap-6">
+            {ProcessInstrumentsprod.map((item) => (
+              <ProcessInstruments
+                key={item.heading}
+                heading={item.heading}
+                img={item.img}
+                liItem={item.liItem}
+              />
+            ))}
           </div>
         </div>
       </div>
