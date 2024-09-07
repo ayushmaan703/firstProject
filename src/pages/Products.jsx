@@ -53,24 +53,13 @@ export default function Products() {
                 : ""
             }`}
           >
-            PRODUCTS
+            PRODUCTS & SERVICES
           </span>
           {/* <span className="mb-4 p-5 font-thin text-lg sm:text-xl text-center">
             product description
           </span> */}
         </div>
-        <Details/>
-       
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
-          {products.map((prod) => (
-            <AboutProd
-              key={prod.id}
-              heading={prod.heading}
-              img={prod.img}
-              details={prod.description}
-            />
-          ))}
-        </div>
+        <Details />
       </div>
     </>
   );

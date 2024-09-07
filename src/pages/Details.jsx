@@ -1,13 +1,17 @@
 import React from "react";
 import AboutProd from "../components/AboutProd";
 import GeneralPurposeRange from "../constants/products/GeneralPurposeRange.js";
+import MotorControlAndDriveProd from "../constants/products/MotorControlAndDriveProd.js";
 import IndustrialPurposeRange from "../constants/products/IndustrialPurposeRange.js";
 import IndustrySpecificPurposeRange from "../constants/products/IndustrySpecificPurposeRange.js";
 import MachineryPurposeRange from "../constants/products/MachineryPurposeRange.js";
 import MicroPurposeRange from "../constants/products/MicroPurposeRange.js";
+import MotorControlAndDrives from "../components/MotorControlAndDrives.jsx";
+
 export default function Details() {
   return (
     <div className="flex flex-col  h-full w-full">
+      {/*section 1*/}
       <div>
         {/* Section 1: Low Voltage AC Drives */}
         <div className="font-bold text-2xl sm:text-3xl font-serif text-left p-3">
@@ -170,7 +174,7 @@ export default function Details() {
           </div>
         </div>
       </div>
-
+      {/*section 2*/}
       <div>
         <div>
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-serif text-center border-b border-black ">
@@ -436,6 +440,161 @@ export default function Details() {
                 />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      {/*section 3 Products Catalog (1).pdf kudamn*/}
+      <div>
+        <div className="px-4 sm:px-8 py-8">
+          {/* Heading */}
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-serif text-center border-b border-black">
+            Motor Control & Drives
+          </span>
+
+          {/* Image */}
+          <img
+            src="/motorContolAndDrives.png"
+            alt="product"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black"
+          />
+
+          {/* Grid Layout for Products */}
+          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-2 gap-6">
+            {MotorControlAndDriveProd.map((item) => (
+              <MotorControlAndDrives
+                key={item.heading}
+                heading={item.heading}
+                details={item.details}
+                liItem={item.liItems}
+              />
+            ))}
+          </div>
+        </div>
+        <div className="px-4 sm:px-8 py-8">
+          {/* Distributed Control Systems (DCS) Heading */}
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-serif text-center border-b border-black">
+            Distributed Control Systems (DCS)
+          </span>
+
+          {/* Image 1 */}
+          <img
+            src="/dcs1.png"
+            alt="product"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black"
+          />
+
+          {/* Programmable Logic Controllers Heading */}
+          <span className="font-bold text-2xl sm:text-2xl mt-32 sm:mt-20 font-serif text-center border-b border-black">
+            Programmable Logic Controllers:
+          </span>
+
+          {/* Details Section */}
+          <div className="mt-5">
+            <span className="font-serif text-left block ml-4 sm:ml-8 mb-4">
+              AC500 / AC800 SERIES - Reliable, Powerful, Scalable:
+            </span>
+
+            {/* List of Features */}
+            <ul className="ml-6 sm:ml-10 mt-2 list-disc list-inside space-y-2">
+              <li>From 8 to 80,000 I/O</li>
+              <li>No rack required</li>
+              <li>Web Server Integrated</li>
+              <li>IEC61131-3 Standard five IEC programming languages</li>
+              <li>Profinet, EtherCAT, MODBUS-TCP, PROFIBUS</li>
+              <li>Complete Hot-Standby System</li>
+            </ul>
+          </div>
+
+          {/* Remote I/O System Section */}
+          <div className="my-5">
+            <span className="font-serif text-left block ml-4 sm:ml-8 mb-2">
+              S500/S800 Remote I/O System:
+            </span>
+            <span className="ml-4 sm:ml-8 block">
+              FBP bus module possesses compact construction and versatile
+              flexibility.
+            </span>
+          </div>
+
+          {/* AC500-eco Series Section */}
+          <div className="mt-5">
+            <span className="font-serif text-left block ml-4 sm:ml-8 mb-4">
+              AC500-eco SERIES - Compact Solutions:
+            </span>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {/* List of Features */}
+              <ul className="ml-6 sm:ml-10 list-disc list-inside space-y-2">
+                <li>Cost-effective</li>
+                <li>Fast Counter on On-Board CPU - 50khz</li>
+                <li>No rack required</li>
+                <li>Up to 10 I/O modules can be connected to CPU</li>
+                <li>Extensive functional libraries</li>
+                <li>IEC61131-3 Standard five IEC programming languages</li>
+                <li>MODBUS-TCP</li>
+              </ul>
+
+              {/* Image 2 */}
+              <img
+                src="/dcs2.png"
+                alt="product"
+                className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="px-4 sm:px-8 py-8">
+          {/* Soft Starters Heading */}
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-serif text-center border-b border-black">
+            Soft Starters:
+          </span>
+
+          {/* Content Section */}
+          <div className="flex flex-col sm:flex-row mt-3 sm:mx-5">
+            {/* Text Section */}
+            <div className="font-serif flex-1 mb-4 sm:mb-0 sm:mr-6">
+              {/* PSR-The compact range */}
+              <div className="mb-4">
+                <span className="text-base sm:text-lg md:text-xl font-semibold">
+                  PSR-The compact range:
+                </span>
+                <span className="ml-2 block sm:inline text-sm sm:text-base">
+                  Most compact of all the soft starter ranges, built-in bypass
+                  reduces the energy loss & makes connection easier.
+                </span>
+              </div>
+
+              {/* PSE Range */}
+              <div className="mb-4">
+                <span className="text-base sm:text-lg md:text-xl font-semibold">
+                  PSE Range:
+                </span>
+                <span className="ml-2 block sm:inline text-sm sm:text-base">
+                  Excellent choice for pumping applications, compact design &
+                  advanced functionality, built-in bypass.
+                </span>
+              </div>
+
+              {/* PST / PST(B) Soft starter */}
+              <div className="mb-4">
+                <span className="text-base sm:text-lg md:text-xl font-semibold">
+                  PST / PST(B) Soft starter:
+                </span>
+                <span className="ml-2 block sm:inline text-sm sm:text-base">
+                  Microprocessor-based soft starter, four-button keypad & the
+                  logic structure of the menu make installation, commissioning &
+                  operation easy. Advanced protection for the motor,
+                  pre-warnings, torque control function.
+                </span>
+              </div>
+            </div>
+
+            {/* Image Section */}
+            <img
+              src="/softStarter.png"
+              alt="product"
+              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 mx-auto border-4 border-black"
+            />
           </div>
         </div>
       </div>
