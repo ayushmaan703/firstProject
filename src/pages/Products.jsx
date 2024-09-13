@@ -43,7 +43,7 @@ export default function Products() {
       >
         <div className="flex flex-col justify-center items-center mb-10 ">
           <span
-            className={`font-extrabold font-montserrat text-4xl sm:text-5xl mt-10 sm:mt-20text-center border- border-b-4 border-black p-3 ${
+            className={`font-extrabold font-montserrat text-4xl sm:text-5xl mt-10 sm:mt-20 text-center border- border-b-4 border-black p-3 ${
               isVisible
                 ? isLargeScreen
                   ? "animated-heading"
