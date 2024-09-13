@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./spreadAnimation.css";
-import products from "../constants/products.js";
-import AboutProd from "../components/AboutProd.jsx";
 import Details from "./Details.jsx";
 
 export default function Products() {
@@ -41,11 +39,11 @@ export default function Products() {
     <>
       <div
         id="products"
-        className="flex flex-col justify-center items-center border-b-2 border-black p-4 sm:p-10 mx-4 sm:mx-36"
+        className="flex flex-col justify-center items-center border-b-2 border-black p-4 sm:p-10  bg-gradient-to-r from-blue-500 to-purple-500 filter mt-4 mx-10 rounded-3xl"
       >
         <div className="flex flex-col justify-center items-center mb-10 ">
           <span
-            className={`font-bold text-4xl sm:text-5xl mt-10 sm:mt-20 font-serif text-center border-b border-black p-3 ${
+            className={`font-extrabold font-montserrat text-4xl sm:text-5xl mt-10 sm:mt-20text-center border- border-b-4 border-black p-3 ${
               isVisible
                 ? isLargeScreen
                   ? "animated-heading"

@@ -1,19 +1,18 @@
-import React, { useState } from "react";
+import React from "react";
 
 function AboutProd({ heading, img, details }) {
   return (
     <>
-      <div className="flex flex-col items-center m-3 p-3 " 
-      >
-        <span className="font-thin mb-1 mt-7 mx-7 text-xl sm:text-2xl">
+      <div className="flex flex-col items-center m-3 p-3 rounded-2xl shadow-inner shadow-black backdrop-filter- ">
+        <span className="font-lora  mt-7 mx-7 text-xl sm:text-xl ">
           {heading}
         </span>
         <img
           src={img}
           alt="product"
-          className="w-9/10 h-9/10 transform transition-transform duration-500 ease-in-out hover:scale-110 border-2 border-black my-4"
+          className="w-auto h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 border-2 border-black my-2  "
         />
-        <span className="m-4 font-light font-serif text-center">{details}</span>
+        <span className="  font-serif text-sm  text-center">{details}</span>
       </div>
     </>
   );

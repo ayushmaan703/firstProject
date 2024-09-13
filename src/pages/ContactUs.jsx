@@ -46,7 +46,7 @@ export default function ContactUs() {
       >
         <p
           className={`text-4xl sm:text-5xl my-4 sm:m-8 border-b-2 border-black p-3 
-           font-bold  font-serif text-center  ${
+           font-bold  font-lora text-center  ${
              isVisible
                ? isLargeScreen
                  ? "animated-heading"

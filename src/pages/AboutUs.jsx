@@ -41,7 +41,7 @@ export default function AboutUs() {
       >
         <p
           className={` text-4xl sm:text-5xl  my-4 sm:m-8 border-b-2 border-black p-3 
-            font-bold  font-serif text-center  ${
+            font-bold  font-lora text-center  ${
             isVisible
               ? isLargeScreen
                 ? "animated-heading"
@@ -51,7 +51,7 @@ export default function AboutUs() {
         >
           ABOUT US
         </p>
-        <div className=" font-light font-serif text-center mb-20">
+        <div className=" font-light font-lora text-center mb-20">
           <p>
             For the 6 years that sheetal enterprises has been in business, the
             initial 6 years were restricted to distribution of Power Electronic

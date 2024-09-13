@@ -9,7 +9,7 @@ export default function MotorControlAndDrives({ heading, details, liItem }) {
         </span>
 
         <div className="my-4 flex flex-col">
-          <span className="font-serif text-sm sm:text-base ml-2 sm:ml-5 mb-4">
+          <span className="font-lora text-sm sm:text-base ml-2 sm:ml-5 mb-4">
             {details}
           </span>
 
