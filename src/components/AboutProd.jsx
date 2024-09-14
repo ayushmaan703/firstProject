@@ -3,8 +3,8 @@ import React from "react";
 function AboutProd({ heading, img, details }) {
   return (
     <>
-      <div className="flex flex-col items-center md:m-3 lg:m-2 m-3 sm:m-3 p-3 rounded-3xl shadow-inner shadow-black bg-gradient-to-r from-blue-500 to-purple-500">
-        <span className="font-lora  mt-7 mx-7 text-xl sm:text-xl ">
+      <div className="flex flex-col items-center md:m-3 lg:m-2 m-3 sm:m-3 p-3 rounded-3xl shadow-inner shadow-black bg-gradient-to-b from-blue-500 to-purple-500">
+        <span className="font-lora  mt-7 mx-7 text-xl sm:text-xl text-customOffwhite ">
           {heading}
         </span>
         <img

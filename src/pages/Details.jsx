@@ -48,7 +48,7 @@ export default function Details() {
 
         {/* General Purpose Range */}
         <div className=" mb-3 ml-2 sm:ml-10  rounded-es-3xl rounded-se-3xl p-6">
-          <span className="text-lg  sm:text-xl border-b border-b-black font-bold font-lora">
+          <span className="text-lg  sm:text-xl border-b border-b-black font-bold font-bold">
             1. General Purpose Range:
           </span>
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 ">
@@ -269,14 +269,14 @@ export default function Details() {
         </div>
         {/*Services*/}
         <div className="my-10 mx-4">
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-2 border-black">
             Services:
           </span>
           <div className="my-4">
             {/*CONSULTANCY*/}
             <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
               <div className="sm:w-1/2 sm:pr-4 py-3 relative ">
-                <span className="font-thin text-2xl sm:text-3xl bg-customBlue rounded-tl-xl p-3 absolute left-0 top-0 ">
+                <span className="border-b-4    border-black  text-2xl sm:text-3xl rounded-tl-xl p-3 absolute left-0 top-0 ">
                   CONSULTANCY
                 </span>
                 <div className="mt-14 mx-5">
@@ -302,7 +302,7 @@ export default function Details() {
             {/*DESIGN*/}
             <div className="bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
               <div className="sm:w-1/2 sm:pr-4 py-3 relative ">
-                <span className="font-thin mb-1  text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-3 absolute left-0 top-0">
+                <span className="font-thin mb-1  text-2xl sm:text-3xl border-b-4 border-black  rounded-tl-xl p-3 absolute left-0 top-0">
                   DESIGN
                 </span>
                 <div className="mt-14 mx-5">
@@ -324,7 +324,7 @@ export default function Details() {
             {/*TRAINING*/}
             <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
               <div className="sm:w-1/2 sm:pr-4 py-3 relative">
-                <span className="font-thin mb-1 absolute left-0 top-0 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-3 ">
+                <span className="font-thin mb-1 absolute left-0 top-0 text-2xl sm:text-3xl border-b-4 border-black rounded-tl-xl p-3 ">
                   TRAINING
                 </span>
                 <div className="mt-14 mx-5">
@@ -348,7 +348,7 @@ export default function Details() {
             {/*COMMISSIONING*/}
             <div className="bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
               <div className="sm:w-1/2 sm:pr-4 py-3 relative">
-                <span className="font-thin mb-1 absolute left-0 top-0 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-3 ">
+                <span className="font-thin mb-1 absolute left-0 top-0 text-2xl sm:text-3xl border-b-4 border-black  rounded-tl-xl p-3 ">
                   COMMISSIONING
                 </span>{" "}
                 <div className="mt-14 mx-5">
@@ -371,7 +371,7 @@ export default function Details() {
             {/*SUPPORT & AMC*/}
             <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
               <div className="sm:w-1/2 sm:pr-4 py-3 relative">
-                <span className="font-thin mb-1 absolute left-0 top-0 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-3 ">
+                <span className="font-thin mb-1 absolute left-0 top-0 text-2xl sm:text-3xl border-b-4 border-black rounded-tl-xl p-3 ">
                   SUPPORT & AMC
                 </span>
                 <div className="mt-14 mx-5">
@@ -392,7 +392,7 @@ export default function Details() {
             {/* PLC SYSTEMS PROGRAMMING SOFTWARE DEVELOPMENT*/}
             <div className="bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
               <div className="sm:w-1/2 sm:pr-4 py-3  relative">
-                <span className="font-thin mb-2 absolute left-0 top-0 text-2xl sm:text-3xl border-b border-black bg-lime-500  p-3 rounded-tl-xl ">
+                <span className="font-thin mb-2 absolute left-0 top-0 text-2xl sm:text-3xl border-b-4 border-black  p-3 rounded-tl-xl ">
                   PLC SYSTEMS PROGRAMMING SOFTWARE DEVELOPMENT
                 </span>
                 <div className="mt-24 mx-5">
@@ -423,7 +423,7 @@ export default function Details() {
             Panel Manufacturer
           </span>
           <div className="font-lora ml-7 mt-6">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start my-8 shadow-inner shadow-black p-7 rounded-3xl font-semibold text-xl bg-gradient-to-r from-blue-500 to-purple-500 ">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start my-8 shadow-inner shadow-black p-7 rounded-3xl   text-xl bg-gradient-to-r from-blue-500 to-purple-500 ">
               <div className="sm:w-1/2 sm:mr-10 ">
                 <p>
                   Programmable logic controller (PLC) control panels, also known
@@ -494,7 +494,7 @@ export default function Details() {
         {/* Motor Control & Drives*/}
         <div className="px-4 sm:px-8 py-8">
           {/* Heading */}
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
             Motor Control & Drives
           </span>
 
@@ -520,7 +520,7 @@ export default function Details() {
         </div>
         {/* Distributed Control Systems (DCS) Heading */}
         <div className="px-4 sm:px-8 py-8">
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 p-1 border-black">
             Distributed Control Systems (DCS)
           </span>
 
@@ -595,7 +595,7 @@ export default function Details() {
         </div>
         {/* Soft Starters Heading */}
         <div className="px-4 sm:px-8 py-8">
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
             Soft Starters:
           </span>
 
@@ -649,7 +649,7 @@ export default function Details() {
         </div>
         {/*Process Instruments*/}
         <div>
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
             Process Instruments:
           </span>
           <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 mt-4 mx-5">
@@ -664,10 +664,10 @@ export default function Details() {
             ))}
           </div>
         </div>
+        {/* AC Servo Drives*/}
         <div>
-          {/* AC Servo Drives*/}
           <div className="my-7">
-            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
               AC Servo Drives:
             </span>
             <div className="w-full flex flex-col items-center">
@@ -685,7 +685,7 @@ export default function Details() {
           </div>
           {/* DVP Series - Modular PLCs:*/}
           <div className="my-7">
-            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
               DVP Series - Modular PLCs:
             </span>
             <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
@@ -707,7 +707,7 @@ export default function Details() {
           </div>
           {/*Hybrid Energy System HES Series: */}
           <div className="my-7">
-            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
               Hybrid Energy System HES Series:
             </span>
             <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
@@ -730,7 +730,7 @@ export default function Details() {
           </div>
           {/* AH 500 PLC Rack type PLC Fully integrated & Software interface:*/}
           <div className="my-7">
-            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
               AH 500 PLC Rack type PLC Fully integrated & Software interface:
             </span>
             <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
@@ -772,7 +772,7 @@ export default function Details() {
           </div>
           {/*Power Supply (SMPS): */}
           <div className="my-7">
-            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
               Power Supply (SMPS):
             </span>
             <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
@@ -798,7 +798,7 @@ export default function Details() {
           </div>
           {/* HMI (Human Machine Interface): */}
           <div className="my-7">
-            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+            <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
               HMI (Human Machine Interface):
             </span>
             <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
@@ -841,10 +841,11 @@ export default function Details() {
         </div>
         {/* Thermoplastic Enclosures*/}
         <div className="my-8">
-          <span className="font-bold text-lg sm:text-2xl text-center border-b border-black bg-lime-500 px-4 py-2 rounded-t-lg block mb-4 sm:mb-6">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black ">
             Thermoplastic Enclosures
           </span>
-          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 ">
+
+          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 mt-4">
             {ThermoplasticEnclosuresProd.map((prod) => (
               <ThermoplasticEnclosures
                 key={prod.heading}
@@ -870,7 +871,7 @@ export default function Details() {
         </div>
         {/*  Ultrasonic & Special Sensors */}
         <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black ">
             Ultrasonic & Special Sensors:
           </span>
           <img
@@ -881,7 +882,7 @@ export default function Details() {
         </div>
         {/*  Lighting & Indicators*/}
         <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black ">
             Lighting & Indicators:
           </span>
           <img
@@ -892,7 +893,7 @@ export default function Details() {
         </div>
         {/* Vision Sensors*/}
         <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black ">
             Vision Sensors:
           </span>
           <img
@@ -902,8 +903,8 @@ export default function Details() {
           />
         </div>
         {/* Safety Sensors*/}
-        <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
+        <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-7 bg-gradient-to-r from-blue-500 to-purple-500 ">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black ">
             Safety Sensors:
           </span>
           <img
@@ -913,20 +914,22 @@ export default function Details() {
           />
         </div>
         <div>
-          <div className="flex flex-col items-center sm:items-start px-4 sm:px-10">
-            <span className="font-bold text-xl sm:text-4xl mt-24 sm:mt-20 font-lora text-center sm:text-left border-b border-black">
-              Rugged Handheld Readers:
-            </span>
+          <div className="items-center sm:items-start px-4 sm:px-10  ">
+            <div className=" flex flex-col">
+              <div>
+                <span className="font-bold text-xl sm:text-4xl mt-24 sm:mt-20 font-lora text-center sm:text-left border-b-2 border-black ">
+                  Rugged Handheld Readers:
+                </span>
+              </div>
+              <span className="font-bold text-base sm:text-lg mt-3 font-lora text-center sm:text-left">
+                DataMan 8000 Series
+              </span>
 
-            <span className="font-bold text-base sm:text-lg mt-3 font-lora text-center sm:text-left">
-              DataMan 8000 Series
-            </span>
-
-            <span className="font-bold text-lg sm:text-xl mt-2 font-lora text-center sm:text-left">
-              The most advanced handheld ID reader ever
-            </span>
-
-            <div className="flex flex-col sm:flex-row sm:justify-between mt-5">
+              <span className="font-bold text-lg sm:text-xl mt-2 font-lora text-center sm:text-left">
+                The most advanced handheld ID reader ever
+              </span>
+            </div>
+            <div className="flex flex-col sm:flex-row sm:justify-between mt-5 shadow-inner shadow-black justify-between rounded-3xl p-6 bg-gradient-to-l from-blue-500 to-purple-500">
               <ul className="list-disc list-inside mx-4 sm:mx-5">
                 <li className="mb-1">
                   High speed image acquisition up to 1000 frames/second
@@ -947,13 +950,13 @@ export default function Details() {
               <img
                 src="/Rugged Handheld Readers.png"
                 alt="product"
-                className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto sm:mx-0 border-4 border-black mt-10 sm:mt-0"
+                className=" w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-4 rounded-3xl mt-10 shadow-2xl shadow-black"
               />
             </div>
           </div>
 
           <div className="flex flex-col items-center sm:items-start px-4 sm:px-10">
-            <span className="font-bold text-xl sm:text-4xl mt-24 sm:mt-20 font-lora text-center sm:text-left border-b border-black">
+            <span className="font-bold text-xl sm:text-4xl mt-24 sm:mt-20 font-lora text-center sm:text-left border-b-4 border-black">
               Advanced Fixed-mount ID Reader:
             </span>
 
@@ -964,27 +967,28 @@ export default function Details() {
             <span className="font-bold text-lg sm:text-xl mt-2 font-lora text-center sm:text-left">
               The most versatile fixed-mount barcode reader ever
             </span>
+            <div className="flex flex-col sm:flex-row sm:justify-between mt-5 shadow-inner shadow-black justify-between rounded-3xl p-6 bg-gradient-to-r from-blue-500 to-purple-500">
+              <div className="flex flex-col sm:flex-row sm:justify-between mt-5">
+                <ul className="list-disc list-inside mx-4 sm:mx-5">
+                  <li className="mb-1">
+                    Ethernet communications : industrial support for
+                    Ethernet/IP, PROFINET,MC Protocol and others.
+                  </li>
+                  <li className="mb-1">
+                    Long working memory capacity for offline or cut off range
+                    code buffering
+                  </li>
+                  <li className="mb-1">Built-in space battery charger.</li>
+                  <li className="mb-1">Compatible with industry standard</li>
+                  <li className="mb-1">Ethernet , USB and RS-232 cable</li>
+                </ul>
 
-            <div className="flex flex-col sm:flex-row sm:justify-between mt-5">
-              <ul className="list-disc list-inside mx-4 sm:mx-5">
-                <li className="mb-1">
-                  Ethernet communications : industrial support for Ethernet/IP,
-                  PROFINET,MC Protocol and others.
-                </li>
-                <li className="mb-1">
-                  Long working memory capacity for offline or cut off range code
-                  buffering
-                </li>
-                <li className="mb-1">Built-in space battery charger.</li>
-                <li className="mb-1">Compatible with industry standard</li>
-                <li className="mb-1">Ethernet , USB and RS-232 cable</li>
-              </ul>
-
-              <img
-                src="/Advanced Fixed-mount ID Reader.png"
-                alt="product"
-                className="w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto sm:mx-0 border-4 border-black mt-10 sm:mt-0"
-              />
+                <img
+                  src="/Advanced Fixed-mount ID Reader.png"
+                  alt="product"
+                  className=" w-3/4 sm:w-1/2 md:w-1/3 lg:w-1/4 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-4 rounded-3xl mt-10 shadow-2xl shadow-black"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -992,14 +996,13 @@ export default function Details() {
           {/* Main Container */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {/* Safety Section */}
-            <div className="flex flex-col items-center text-center">
-              <h2 className="text-lg sm:text-xl font-bold text-blue-800 mb-4">
-                Safety
-              </h2>
+            <div className="flex flex-col items-center text-center shadow-inner shadow-black p-4 rounded-3xl bg-gradient-to-b from-blue-500 to-purple-500">
+              <h2 className="text-lg sm:text-xl font-bold ">Safety</h2>
+
               <img
                 src="/Safety.png"
                 alt="Safety Products"
-                className="w-full sm:w-3/4 lg:w-2/3 mb-4"
+                className="  w-full sm:w-3/4 lg:w-2/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-4 rounded-3xl mt-10 shadow-2xl shadow-black"
               />
               <ul className="list-none">
                 <li>Safety switches</li>
@@ -1013,14 +1016,12 @@ export default function Details() {
             </div>
 
             {/* Automation Section */}
-            <div className="flex flex-col items-center text-center">
-              <h2 className="text-lg sm:text-xl font-bold text-blue-800 mb-4">
-                Automation
-              </h2>
+            <div className="flex flex-col items-center text-center shadow-inner shadow-black p-4 rounded-3xl bg-gradient-to-t from-blue-500 to-purple-500">
+              <h2 className="text-lg sm:text-xl font-bold ">Automation</h2>
               <img
                 src="/Automation.png"
                 alt="Automation Products"
-                className="w-full sm:w-3/4 lg:w-2/3 mb-4"
+                className="  w-full sm:w-3/4 lg:w-2/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-4 rounded-3xl mt-10 shadow-2xl shadow-black "
               />
               <ul className="list-none">
                 <li>Multiple limit switches</li>
@@ -1034,14 +1035,12 @@ export default function Details() {
             </div>
 
             {/* ManMachine Section */}
-            <div className="flex flex-col items-center text-center">
-              <h2 className="text-lg sm:text-xl font-bold text-blue-800 mb-4">
-                ManMachine
-              </h2>
+            <div className="flex flex-col items-center text-center shadow-inner shadow-black p-4 rounded-3xl bg-gradient-to-b from-blue-500 to-purple-500">
+              <h2 className="text-lg sm:text-xl font-bold ">ManMachine</h2>
               <img
                 src="/ManMachine.png"
                 alt="ManMachine Products"
-                className="w-full sm:w-3/4 lg:w-2/3 mb-4"
+                className="  w-full sm:w-3/4 lg:w-2/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-4 rounded-3xl mt-10 shadow-2xl shadow-black"
               />
               <ul className="list-none">
                 <li>Hand-held pendant stations</li>
@@ -1053,11 +1052,8 @@ export default function Details() {
           </div>
         </div>
         {/* Fuses For All Process Industries*/}
-        <div
-          className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500"
-          v
-        >
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
+        <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black ">
             Fuses For All Process Industries:
           </span>
           <img
@@ -1073,59 +1069,67 @@ export default function Details() {
             className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto rounded-3xl mt-10 shadow-2xl shadow-black"
           />
         </div>
-        <div className="px-4 sm:px-8 lg:px-16 py-8">
+        <div className="px-4 sm:px-8 lg:px-16 py-8 ">
           {/* Main Container */}
-          <div className="flex flex-col sm:flex-row justify-between items-start">
+          <div className="flex flex-col sm:flex-col justify-between items-start">
             {/* Industrial Safety Mat System */}
-            <div className="w-full sm:w-1/2 mb-8 sm:mb-0">
-              <h2 className="text-xl sm:text-2xl font-bold text-blue-800 mb-4">
+            <div className=" mb-8 sm:mb-0 md:mr-5">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4">
                 Industrial Safety Mat System
               </h2>
-              <p className="text-base sm:text-lg mb-4">
-                Being used to successfully reduce hazards in a number of
-                industries in machine point-of-operation, area and perimeter
-                guarding applications in the following industries:
-              </p>
-              <ul className="list-disc list-inside mb-4">
-                <li>Tire Manufacturing</li>
-                <li>Paper and Cardboard Manufacturing</li>
-                <li>Automotive</li>
-                <li>Wood Products Manufacturing</li>
-                <li>Aircraft Industry</li>
-                <li>Boat Manufacturers</li>
-                <li>Tractor Manufacturers</li>
-              </ul>
-              <div className="flex justify-center sm:justify-start">
+              <div className="shadow-inner bg-gradient-to-r from-blue-500 to-purple-500 shadow-black md:p-5 p-7 rounded-3xl  md:flex">
+                <div>
+                  <p className="text-base sm:text-lg mb-4">
+                    Being used to successfully reduce hazards in a number of
+                    industries in machine point-of-operation, area and perimeter
+                    guarding applications in the following industries:
+                  </p>
+                  <ul className="list-disc list-inside mb-4">
+                    <li>Tire Manufacturing</li>
+                    <li>Paper and Cardboard Manufacturing</li>
+                    <li>Automotive</li>
+                    <li>Wood Products Manufacturing</li>
+                    <li>Aircraft Industry</li>
+                    <li>Boat Manufacturers</li>
+                    <li>Tractor Manufacturers</li>
+                  </ul>{" "}
+                </div>
+                {/* <div className=" justify-center sm:justify-start"> */}
                 <img
                   src="/Industrial Safety Mat System.png"
                   alt="Industrial Safety Mat"
-                  className="w-full sm:w-3/4 lg:w-2/3"
+                  className="w-auto sm:w-1/4 md:w-1/4 lg:h-1/4  transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-4 rounded-3xl mt-10 shadow-2xl shadow-black"
                 />
+                {/* </div> */}
               </div>
             </div>
 
             {/* Pressure Sensitive Edge Guards */}
-            <div className="w-full sm:w-1/2">
-              <h2 className="text-xl sm:text-2xl font-bold text-blue-800 mb-4">
+            <div className="mt-5">
+              <h2 className="text-xl sm:text-2xl font-bold mb-4">
                 Pressure Sensitive Edge Guards
-              </h2>
-              <p className="text-base sm:text-lg mb-4">
-                Manufactured to meet the user’s specification for length and
-                outlet location, EGS110 and EGS120 when pressed, sends a signal
-                to the safety controller to stop or reverse operation depending
-                on the application. Multiple mounting channel designs allow for
-                easy installation on most surfaces.
-              </p>
-              <ul className="list-disc list-inside mb-4">
-                <li>Impact resilient, totally submersible</li>
-                <li>Highly sensitive, pressure-sensitive edge guard</li>
-              </ul>
-              <div className="flex justify-center sm:justify-start">
-                <img
-                  src="/pressure sensitive edge gaurd.png"
-                  alt="Pressure Sensitive Edge Guards"
-                  className="w-full sm:w-3/4 lg:w-2/3"
-                />
+              </h2>{" "}
+              <div className="shadow-inner shadow-black bg-gradient-to-r from-blue-500 to-purple-500 md:p-5 p-7 rounded-3xl md:flex">
+                <div>
+                  <p className="text-base sm:text-lg mb-4">
+                    Manufactured to meet the user’s specification for length and
+                    outlet location, EGS110 and EGS120 when pressed, sends a
+                    signal to the safety controller to stop or reverse operation
+                    depending on the application. Multiple mounting channel
+                    designs allow for easy installation on most surfaces.
+                  </p>
+                  <ul className="list-disc list-inside mb-4">
+                    <li>Impact resilient, totally submersible</li>
+                    <li>Highly sensitive, pressure-sensitive edge guard</li>
+                  </ul>
+                </div>
+                <div className="flex justify-center sm:justify-start">
+                  <img
+                    src="/pressure sensitive edge gaurd.png"
+                    alt="Pressure Sensitive Edge Guards"
+                    className="w-auto h-auto   transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx- rounded-3xl  shadow-2xl shadow-black"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -1133,61 +1137,72 @@ export default function Details() {
 
         <div className="px-4 sm:px-8 lg:px-16 py-8">
           {/* Title Section */}
-          <h1 className="text-center font-bold text-2xl sm:text-4xl mb-6 text-green-800">
-            Hybrid Energy Saving Systems
-          </h1>
-          <h2 className="text-center font-semibold text-lg sm:text-2xl text-blue-800 mb-4">
-            Solutions for Plastic Industry - Energy Savings in Injection
-            Moulding
-          </h2>
-          <p className="text-center text-base sm:text-lg mb-6">
-            AC servo drive + AC servo motor + fixed displacement pump + pressure
-            sensor with PID control mode, this system provides you with precise
-            pressure and speed control to enable quick response and high
-            duplication accuracy.
-          </p>
-
-          {/* System Structure Section */}
-          <div className="flex flex-col sm:flex-row justify-center items-center mb-12">
-            <img
-              src="/System Structure.png"
-              alt="System Structure"
-              className="w-full sm:w-3/4 lg:w-1/2"
-            />
-          </div>
-
-          {/* Energy Consumption Curve */}
-          <h2 className="text-center font-semibold text-lg sm:text-2xl mb-4">
-            Energy Consumption Curve of the Injection Molding Machine
-          </h2>
-          <div className="flex flex-col items-center">
-            <img
-              src="/Energy Consumption Curve of the Injection Molding Machine.png"
-              alt="Energy Consumption Curve"
-              className="w-full sm:w-3/4 lg:w-1/2"
-            />
-          </div>
-
-          {/* System Explanation */}
-          <div className="flex flex-col sm:flex-row justify-between items-start mt-6">
-            {/* Left column */}
-            <div className="w-full sm:w-1/2">
-              <ul className="list-disc list-inside mb-4">
-                <li>AC fan control for better system management</li>
-                <li>Precise pressure feedback</li>
-                <li>Improved power efficiency with PMSM</li>
-                <li>Multiple energy-saving options for HES</li>
-              </ul>
+          <div className="flex  flex-col">
+            <div className="mb-6">
+              <span className=" font-bold p-2 text-2xl sm:text-4xl mb-4 border-b-4 border-black">
+                Hybrid Energy Saving Systems
+              </span>
             </div>
-            {/* Right column */}
-            <div className="w-full sm:w-1/2">
-              <p className="text-sm sm:text-base">
-                This system is designed to reduce energy consumption by up to
-                70% in injection molding machines. Traditional machines with
-                fixed displacement pumps experience substantial energy waste,
-                while the Hybrid Energy Saving System optimizes performance
-                during key stages of the injection molding process.
-              </p>
+            <div className="ml-3 mb-3 ">
+              <span className="  sm:text-2xl  mb-4">
+                Solutions for Plastic Industry - Energy Savings in Injection
+                Moulding
+              </span>
+            </div>
+          </div>
+          <div className="shadow-inner bg-gradient-to-r from-blue-500 to-purple-500 shadow-black rounded-3xl p-5 ">
+            <p className=" text-base sm:text-lg mb-6">
+              AC servo drive + AC servo motor + fixed displacement pump +
+              pressure sensor with PID control mode, this system provides you
+              with precise pressure and speed control to enable quick response
+              and high duplication accuracy.
+            </p>
+            {/* System Structure Section */}
+            <div className="flex flex-col sm:flex-row justify-center items-center mb-12">
+              <img
+                src="/System Structure.png"
+                alt="System Structure"
+                className="w-full sm:w-3/4 md:w-1/2 lg:w:1/2   transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-4 rounded-3xl mt-10 shadow-2xl shadow-black"
+              />
+            </div>
+          </div>
+          {/* Energy Consumption Curve */}
+          <div className="mt-7">
+            <h2 className=" font-semibold text-lg sm:text-2xl mb-4">
+              Energy Consumption Curve of the Injection Molding Machine
+            </h2>
+            <div className="shadow-inner bg-gradient-to-r from-blue-500 to-purple-500 shadow-black rounded-3xl p-4">
+              <div className="flex flex-col items-center">
+                <img
+                  src="/Energy Consumption Curve of the Injection Molding Machine.png"
+                  alt="Energy Consumption Curve"
+                  className="w-full sm:w-3/4 md:w-1/2 lg:h-1/2  transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-4 rounded-3xl mt-10 shadow-2xl shadow-black"
+                />
+              </div>
+
+              {/* System Explanation */}
+              <div className="mx-4 flex flex-col sm:flex-row justify-between items-start mt-6">
+                {/* Left column */}
+                <div className="w-full sm:w-1/2">
+                  <ul className="list-disc list-inside mb-4">
+                    <li>AC fan control for better system management</li>
+                    <li>Precise pressure feedback</li>
+                    <li>Improved power efficiency with PMSM</li>
+                    <li>Multiple energy-saving options for HES</li>
+                  </ul>
+                </div>
+                {/* Right column */}
+                <div className="w-full sm:w-1/2">
+                  <p className="text-sm sm:text-base">
+                    This system is designed to reduce energy consumption by up
+                    to 70% in injection molding machines. Traditional machines
+                    with fixed displacement pumps experience substantial energy
+                    waste, while the Hybrid Energy Saving System optimizes
+                    performance during key stages of the injection molding
+                    process.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
