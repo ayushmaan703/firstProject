@@ -18,8 +18,8 @@ export default function AboutUs() {
   useEffect(() => {
     const handleScroll = () => {
       if (
-        (isLargeScreen && window.scrollY > 1500) ||
-        (!isLargeScreen && window.scrollY > 3000)
+        (isLargeScreen && window.scrollY > 30300) ||
+        (!isLargeScreen && window.scrollY > 52312)
       ) {
         setIsVisible(true);
       } else {
