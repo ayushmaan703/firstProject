@@ -10,7 +10,7 @@ export default {
       },
       colors: {
         customBlue: '#143F6B',
-        customSkyBlue: '#84CEEB',
+        customOffwhite: '#EEE2DC',
         customLightGray: '#A771FD',
         customLightPurple: '#0677A1',
         customYellow:"#FAC213",

@@ -1,5 +1,16 @@
 const prod = [
   {
+    idx: 0,
+    heading: "Actuator and Positioners",
+    img: "/processInstrument/2.png",
+    liItem: [
+      "Current Pneumatic converter (I/P Converter) ",
+      "Smart valve positioners",
+      "Electrical Actuator",
+    ],
+  },
+  {
+    idx: 1,
     heading: "Pressure Measurement",
     img: "/processInstrument/1.png",
     liItem: [
@@ -13,16 +24,9 @@ const prod = [
       "Safety-Critical Transmitters",
     ],
   },
+
   {
-    heading: "Actuator and Positioners",
-    img: "/processInstrument/2.png",
-    liItem: [
-      "Current Pneumatic converter (I/P Converter) ",
-      "Smart valve positioners",
-      "Electrical Actuator",
-    ],
-  },
-  {
+    idx: 1,
     heading: "Flow Measurement",
     img: "/processInstrument/3.png",
     liItem: [
@@ -37,6 +41,7 @@ const prod = [
     ],
   },
   {
+    idx: 0,
     heading: "Temperature Measurement",
     img: "/processInstrument/4.png",
     liItem: [
@@ -55,6 +60,20 @@ const prod = [
     ],
   },
   {
+    idx: 0,
+    heading: "Universal Process Controller",
+    img: "/processInstrument/6.png",
+    liItem: [
+      "Panel mount Controllers",
+      "CM 10",
+      "CM 30",
+      "CM 50",
+      "Field mount controller",
+      "Recorder SM300",
+    ],
+  },
+  {
+    idx: 1,
     heading: "Water & Industrial Analyzer",
     img: "/processInstrument/5.png",
     liItem: [
@@ -77,18 +96,6 @@ const prod = [
       "ph & Redox / ORP Products",
       "Residual chlorine monitors",
       "Sodium Monitors",
-    ],
-  },
-  {
-    heading: "Universal Process Controller",
-    img: "/processInstrument/6.png",
-    liItem: [
-      "Panel mount Controllers",
-      "CM 10",
-      "CM 30",
-      "CM 50",
-      "Field mount controller",
-      "Recorder SM300",
     ],
   },
 ];

@@ -1,5 +1,6 @@
 const prod = [
   {
+    idx: 1,
     heading: "Industrial Drives",
     details:
       "ABB Industrial Drives provide scalable motor control from standard to demanding application for a wide range of industries such as pulp and paper, metals, mining, cement, power, chemical, oil & gas.",
@@ -10,6 +11,7 @@ const prod = [
     ],
   },
   {
+    idx: 0,
     heading: "Motion Control Drives",
     details:
       "ABB offers an Extensive range of Machine Control Solutions for diverse industrial applications i.e. Labeling, Packaging, Bottling Pick & Place, Laser Cutting/Trimming, Stacking, Cut to length, Flying Shear, Web feeders & High Speed rotary wrappers.",
@@ -26,6 +28,7 @@ const prod = [
     ],
   },
   {
+    idx: 1,
     heading: "General Purpose Drives",
     details:
       "ABB General Purpose Drives are designed to control a wide range of applications. They are easy to select, install, commission and use, and provide many built in features.",
@@ -38,18 +41,21 @@ const prod = [
     ],
   },
   {
+    idx: 0,
     heading: "Machinery Drives",
     details:
       "ABB Machinery Drives provide speed control of diverse applications from fan motors to treadmill motors, as well as high precision application such as positioning & synchronization system.",
     liItems: [["ACS 355 ACS 850:", " (0.5 to 30 HP) (0.5 to 700 HP)"]],
   },
   {
+    idx: 1,
     heading: "Micro Drives",
     details:
       "The ABB Micro Drives provides flexible mounting alternatives & straight forward configuration and they are very easy to install & setup.",
     liItems: [["ACS 150:", "0.5HP to 5 HP"]],
   },
   {
+    idx: 0,
     heading: "DC Drives",
     details:
       "DC drives, used in most industrial applications as well as for the modernization of old plants.",
@@ -59,12 +65,14 @@ const prod = [
     ],
   },
   {
+    idx: 1,
     heading: "Solar Pump Drives",
     details:
       "The ABB Solar Pump Drives have built in flow measurement and flow detection function, built in MPPT up to IP 66 for harsh environment dual supply mode compatible with all pumps with remote monitoring facilities ",
     liItems: [["ACS 355 :", " with MPPT 0.5 HP to 25 HP"]],
   },
   {
+    idx: 0,
     heading: "Medium Voltage Drives",
     details: "",
     liItems: [

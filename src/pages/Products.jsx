@@ -39,7 +39,7 @@ export default function Products() {
     <>
       <div
         id="products"
-        className="flex flex-col justify-center items-center border-b-2 border-black p-4 sm:p-10  bg-gradient-to-r from-blue-500 to-purple-500 filter mt-4 lg:mx-10 rounded-3xl"
+        className="flex flex-col justify-center items-center border-b-2 border-black p-4 sm:p-10 filter mt-4 lg:mx-10 rounded-3xl"
       >
         <div className="flex flex-col justify-center items-center mb-10 ">
           <span

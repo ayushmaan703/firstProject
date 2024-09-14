@@ -39,36 +39,36 @@ export default function Details() {
       {/*section 1*/}
       <div>
         {/* Section 1: Low Voltage AC Drives */}
-        
-          <div className="font-bold   text-2xl sm:text-3xl font-serif text-left p-3">
-            <span className="border-b-2 border-b-black ">
-              1. Low Voltage AC Drives:
-            </span>
-          </div>
 
-          {/* General Purpose Range */}
-          <div className=" mb-3 ml-2 sm:ml-10  rounded-es-3xl rounded-se-3xl p-6">
-            <span className="text-lg  sm:text-xl border-b border-b-black font-bold font-lora">
-              1. General Purpose Range:
-            </span>
-            <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 ">
-              {GeneralPurposeRange.map((prod) => (
-                <AboutProd
-                  key={prod.id}
-                  heading={prod.heading}
-                  img={prod.img}
-                  details={prod.description}
-                />
-              ))}
-            </div>
+        <div className="font-bold   text-2xl sm:text-3xl font-serif text-left p-3">
+          <span className="border-b-2 border-b-black ">
+            1. Low Voltage AC Drives:
+          </span>
+        </div>
+
+        {/* General Purpose Range */}
+        <div className=" mb-3 ml-2 sm:ml-10  rounded-es-3xl rounded-se-3xl p-6">
+          <span className="text-lg  sm:text-xl border-b border-b-black font-bold font-lora">
+            1. General Purpose Range:
+          </span>
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 ">
+            {GeneralPurposeRange.map((prod) => (
+              <AboutProd
+                key={prod.id}
+                heading={prod.heading}
+                img={prod.img}
+                details={prod.description}
+              />
+            ))}
           </div>
-     
+        </div>
+
         {/* Micro Purpose Range */}
         <div className="p-3 ml-2 sm:ml-10 ">
-          <span className="text-lg sm:text-xl border-b border-b-black font-bold " >
+          <span className="text-lg sm:text-xl border-b border-b-black font-bold ">
             2. Micro Purpose Range:
           </span>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mt-3">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4  mt-3">
             {MicroPurposeRange.map((prod) => (
               <AboutProd
                 key={prod.id}
@@ -85,7 +85,7 @@ export default function Details() {
           <span className="text-lg sm:text-xl border-b border-b-black font-bold">
             3. Machinery Purpose Range:
           </span>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-3 gap-5 mt-3">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-3  mt-3">
             {MachineryPurposeRange.map((prod) => (
               <AboutProd
                 key={prod.id}
@@ -102,7 +102,7 @@ export default function Details() {
           <span className="text-lg sm:text-xl border-b border-b-black font-bold">
             4. Industrial Purpose Range:
           </span>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 mt-3">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 mt-3">
             {IndustrialPurposeRange.map((prod) => (
               <AboutProd
                 key={prod.id}
@@ -119,7 +119,7 @@ export default function Details() {
           <span className="text-lg sm:text-xl border-b border-b-black font-bold">
             5. Industry Specific Purpose Range:
           </span>
-          <div className="w-full grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-3 gap-5 mt-3">
+          <div className="w-full grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-3  mt-3">
             {IndustrySpecificPurposeRange.map((prod) => (
               <AboutProd
                 key={prod.id}
@@ -132,11 +132,11 @@ export default function Details() {
         </div>
 
         {/* Legacy Purpose Range */}
-        <div className="p-3 ml-2 sm:ml-10">
+        <div className="p-3 ml-2 sm:ml-10 ">
           <span className="border-b border-b-black font-bold">
             6. Legacy Purpose Range:
           </span>
-          <div className="ml-3 sm:ml-5 w-full flex flex-col font-light font-lora mt-3">
+          <div className="ml-3 sm:ml-5 w-full flex flex-col font-light font-lora mt-3 shadow-inner shadow-black p-8 rounded-3xl ">
             <span className="my-2">Legacy drives</span>
             <span className="my-2">
               SE has developed a product life cycle management model aimed to
@@ -163,21 +163,21 @@ export default function Details() {
         </div>
 
         {/* Section 2: Low Voltage Products and Systems */}
-        <div className="p-3 ml-2 sm:ml-10">
+        <div className="p-3 ml-2 sm:ml-10 ">
           <p className="font-bold text-2xl sm:text-3xl font-lora text-left p-3">
             2. Low Voltage Products and Systems:
           </p>
-          <div className="w-full flex flex-col items-center">
-            <img
-              src="/lowVoltage.png"
-              alt="product"
-              className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 border-4 border-black"
-            />
-            <span className="m-4 font-light font-lora text-center">
+          <div className="w-full flex flex-col md:flex-row items-center shadow-inner shadow-black rounded-3xl p-10 bg-gradient-to-r from-blue-500 to-purple-500">
+            <span className="m-4 font-medium font-serif text-lg text-left">
               ABB provides a full range of low voltage solutions to connect,
               protect, control, and measure a wide range of electrical
               installations.
             </span>
+            <img
+              src="/lowVoltage.png"
+              alt="product"
+              className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-3xl shadow-2xl shadow-black md:ml-32"
+            />
           </div>
         </div>
 
@@ -186,41 +186,43 @@ export default function Details() {
           <p className="font-bold text-2xl sm:text-3xl font-lora text-left p-3">
             3. Standard Low Voltage Motors:
           </p>
-          <div className="w-full flex flex-col items-center">
-            <img
-              src="/highVoltage.png"
-              alt="product"
-              className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 border-4 border-black"
-            />
-            <span className="m-4 font-light font-lora text-center">
+          <div className="w-full flex flex-col md:flex-row items-center shadow-inner shadow-black rounded-3xl p-10 bg-gradient-to-r from-blue-500 to-purple-500">
+            <span className="m-4 font-light font-serif text-lg text-left">
               IEC Low voltage motors are suitable for all industries, all
               applications, fulfilling all national and international mandatory
               efficiency regulations.
             </span>
+            <img
+              src="/highVoltage.png"
+              alt="product"
+              className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-3xl shadow-2xl shadow-black md:ml-32"
+            />
           </div>
         </div>
       </div>
       {/*section 2*/}
-      <div>
+      <div className="mt-3">
         <div>
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-2 border-black ">
             Process & Machines Automation Systems :
           </span>
-          <p className="font-medium m-5 ">
-            Our Product Range Includes following-
-          </p>
-          <div className="font-lora ml-10">
-            <p>• DG Synchronizing and Load Sharing</p>
-            <p>• PLC based system for auto start, auto synchronization.</p>
-            <p> • PLC based auto load Sharing.</p>
-            <p>• Drive Control Systems </p>
-            <p>• Various Types of Panels (LT, MCC, PMCC, HT etc.)</p>
-            <p>• SCADA </p>
-            <p>• Remote Device Management</p>
-            <p>• Building & Home Automation System</p>
-            <p>• GPRS Modems/ Routers</p>
-            <p>• Utilities especially Power Networks</p>
-            <p>• Wireless Backup Connection for POS/ATMs</p>
+          <div className="shadow-inner shadow-black p-5 my-4 mx-8  rounded-3xl">
+            <p className="font-medium m-5 ">
+              Our Product Range Includes following-
+            </p>
+            <div className="font-lora ml-10">
+              <p>• DG Synchronizing and Load Sharing</p>
+              <p>• PLC based system for auto start, auto synchronization.</p>
+              <p> • PLC based auto load Sharing.</p>
+              <p>• Drive Control Systems </p>
+              <p>• Various Types of Panels (LT, MCC, PMCC, HT etc.)</p>
+              <p>• SCADA </p>
+              <p>• Remote Device Management</p>
+              <p>• Building & Home Automation System</p>
+              <p>• GPRS Modems/ Routers</p>
+              <p>• Utilities especially Power Networks</p>
+              <p>• Wireless Backup Connection for POS/ATMs</p>
+            </div>
           </div>
           <p className="font-medium m-5">Our customer includes-</p>{" "}
           <div className="font-lora mb-20 ml-10">
@@ -236,12 +238,7 @@ export default function Details() {
           <span className="font-bold text-2xl sm:text-4xl  font-lora text-right border-b border-black  ">
             HARMONICS :
           </span>
-          <div className="w-full flex flex-col items-center">
-            <img
-              src="/Schaffner.png"
-              alt="product"
-              className=" w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 border-4 border-black ml-7"
-            />
+          <div className="w-full flex flex-col md:flex-row items-center shadow-inner shadow-black rounded-3xl p-10 bg-gradient-to-r from-blue-500 to-purple-500 mt-6">
             <div className="font-lora ml-7">
               <p>
                 WE are pleased to offer harmonic filters, Input and Output
@@ -263,151 +260,171 @@ export default function Details() {
                 operation of electronic and electrical systems.
               </p>
             </div>
+            <img
+              src="/Schaffner.png"
+              alt="product"
+              className="w-full sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-3xl shadow-2xl shadow-black md:ml-32"
+            />
           </div>
         </div>
+        {/*Services*/}
         <div className="my-10 mx-4">
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
             Services:
           </span>
           <div className="my-4">
-            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:pr-4 py-3">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
+            {/*CONSULTANCY*/}
+            <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
+              <div className="sm:w-1/2 sm:pr-4 py-3 relative ">
+                <span className="font-thin text-2xl sm:text-3xl bg-customBlue rounded-tl-xl p-3 absolute left-0 top-0 ">
                   CONSULTANCY
                 </span>
-                <p className="mx-4 my-3 font-light font-lora">
-                  Our Engineering team is available to help you select, prepare
-                  costs, safety assessment, and third-party audits of various
-                  applications as required at normal charges.
-                </p>
-                <p className="mx-4 my-3 font-light font-lora">
-                  If you need a specific solution to your needs, feel free to
-                  contact us for these requirements.
-                </p>
+                <div className="mt-14 mx-5">
+                  <p className="mx-4 my-3 font-light font-lora">
+                    Our Engineering team is available to help you select,
+                    prepare costs, safety assessment, and third-party audits of
+                    various applications as required at normal charges.
+                  </p>
+                  <p className="mx-4 my-3 font-light font-lora">
+                    If you need a specific solution to your needs, feel free to
+                    contact us for these requirements.
+                  </p>
+                </div>
               </div>
               <div className="sm:w-1/2 sm:px-4 flex justify-center items-center">
                 <img
                   src="/servicesphoto/1.png"
                   alt="consultancy"
-                  className="w-auto h-3/4 border-2 border-black"
+                  className=" w-3/4 sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-3xl shadow-2xl shadow-black mb-10 md:ml-32"
                 />
               </div>
             </div>
-
-            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:pr-4 py-3">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
+            {/*DESIGN*/}
+            <div className="bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
+              <div className="sm:w-1/2 sm:pr-4 py-3 relative ">
+                <span className="font-thin mb-1  text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-3 absolute left-0 top-0">
                   DESIGN
                 </span>
-                <p className="mx-4 my-3 font-light font-lora">
-                  At PMAS, we have multiple design teams for control systems,
-                  hardware design, and software production, providing integrated
-                  solutions with HMIs and SCADA.
-                </p>
+                <div className="mt-14 mx-5">
+                  <p className="mx-4 my-3 font-light font-lora">
+                    At PMAS, we have multiple design teams for control systems,
+                    hardware design, and software production, providing
+                    integrated solutions with HMIs and SCADA.
+                  </p>
+                </div>
               </div>
               <div className="sm:w-1/2 sm:px-4 flex justify-center items-center">
                 <img
                   src="/servicesphoto/2.png"
                   alt="design"
-                  className="w-auto h-3/4 border-2 border-black"
+                  className=" w-3/4 sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-3xl shadow-2xl shadow-black mb-10 md:ml-32"
                 />
               </div>
             </div>
-
-            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:pr-4 py-3">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
+            {/*TRAINING*/}
+            <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
+              <div className="sm:w-1/2 sm:pr-4 py-3 relative">
+                <span className="font-thin mb-1 absolute left-0 top-0 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-3 ">
                   TRAINING
                 </span>
-                <p className="mx-4 my-3 font-light font-lora">
-                  We offer onsite and campus training on automation products and
-                  certified courses for specific products.
-                </p>
-                <p className="mx-4 my-3 font-light font-lora">
-                  Let us help identify and fulfill your training needs.
-                </p>
+                <div className="mt-14 mx-5">
+                  <p className="mx-4 my-3 font-light font-lora">
+                    We offer onsite and campus training on automation products
+                    and certified courses for specific products.
+                  </p>
+                  <p className="mx-4 my-3 font-light font-lora">
+                    Let us help identify and fulfill your training needs.
+                  </p>
+                </div>
               </div>
               <div className="sm:w-1/2 sm:px-4 flex justify-center items-center">
                 <img
                   src="/servicesphoto/3.png"
                   alt="training"
-                  className="w-auto h-3/4 border-2 border-black"
+                  className=" w-3/4 sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-3xl shadow-2xl shadow-black mb-10 md:ml-32"
                 />
               </div>
             </div>
-
-            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:pr-4 py-3">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
+            {/*COMMISSIONING*/}
+            <div className="bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
+              <div className="sm:w-1/2 sm:pr-4 py-3 relative">
+                <span className="font-thin mb-1 absolute left-0 top-0 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-3 ">
                   COMMISSIONING
-                </span>
-                <p className="mx-4 my-3 font-light font-lora">
-                  We provide services like FAT, software commissioning,
-                  installation verification, safety validation, system power-up,
-                  SAT, I/O checking, training, and operational support.
-                </p>
+                </span>{" "}
+                <div className="mt-14 mx-5">
+                  <p className="mx-4 my-3 font-light font-lora">
+                    We provide services like FAT, software commissioning,
+                    installation verification, safety validation, system
+                    power-up, SAT, I/O checking, training, and operational
+                    support.
+                  </p>
+                </div>
               </div>
               <div className="sm:w-1/2 sm:px-4 flex justify-center items-center">
                 <img
                   src="/servicesphoto/4.png"
                   alt="commissioning"
-                  className="w-auto h-3/4 border-2 border-black"
+                  className=" w-3/4 sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-3xl shadow-2xl shadow-black mb-10 md:ml-32"
                 />
               </div>
             </div>
-
-            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:pr-4 py-3">
-                <span className="font-thin mb-1 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-2 ">
+            {/*SUPPORT & AMC*/}
+            <div className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
+              <div className="sm:w-1/2 sm:pr-4 py-3 relative">
+                <span className="font-thin mb-1 absolute left-0 top-0 text-2xl sm:text-3xl border-b border-black bg-lime-500 rounded-tl-xl p-3 ">
                   SUPPORT & AMC
                 </span>
-                <p className="mx-4 my-3 font-light font-lora">
-                  We provide preventive maintenance, remote diagnostics, 24/7
-                  callout support, and system auditing.
-                </p>
+                <div className="mt-14 mx-5">
+                  <p className="mx-4 my-3 font-light font-lora">
+                    We provide preventive maintenance, remote diagnostics, 24/7
+                    callout support, and system auditing.
+                  </p>
+                </div>
               </div>
               <div className="sm:w-1/2 sm:px-4 flex justify-center items-center">
                 <img
                   src="/servicesphoto/5.png"
                   alt="support and AMC"
-                  className="w-auto h-3/4 border-2 border-black"
+                  className=" w-3/4 sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-3xl shadow-2xl shadow-black mb-10 md:ml-32"
                 />
               </div>
             </div>
-
-            <div className="bg-slate-200 rounded-xl flex flex-col sm:flex-row my-8">
-              <div className="sm:w-1/2 sm:pr-4 py-3">
-                <span className="font-thin mb-2 mt-7 text-2xl sm:text-3xl border-b border-black bg-lime-500  rounded-tl-xl ">
+            {/* PLC SYSTEMS PROGRAMMING SOFTWARE DEVELOPMENT*/}
+            <div className="bg-gradient-to-r from-purple-500 to-blue-500 rounded-xl flex flex-col sm:flex-row mt-4 shadow-inner shadow-black">
+              <div className="sm:w-1/2 sm:pr-4 py-3  relative">
+                <span className="font-thin mb-2 absolute left-0 top-0 text-2xl sm:text-3xl border-b border-black bg-lime-500  p-3 rounded-tl-xl ">
                   PLC SYSTEMS PROGRAMMING SOFTWARE DEVELOPMENT
                 </span>
-                <p className="mx-4 my-3 font-light font-lora">
-                  We specialize in PLC systems programming and software
-                  development, working with PLCs from Siemens, Schneider,
-                  Phoenix, and ABB.
-                </p>
-                <p className="mx-4 my-3 font-light font-lora">
-                  We provide services for system topologies, PLC-based safety
-                  systems, and legacy systems migration.
-                </p>
+                <div className="mt-24 mx-5">
+                  <p className="mx-4 my-3 font-light font-lora">
+                    We specialize in PLC systems programming and software
+                    development, working with PLCs from Siemens, Schneider,
+                    Phoenix, and ABB.
+                  </p>
+                  <p className="mx-4 my-3 font-light font-lora">
+                    We provide services for system topologies, PLC-based safety
+                    systems, and legacy systems migration.
+                  </p>
+                </div>
               </div>
               <div className="sm:w-1/2 sm:px-4 flex justify-center items-center">
                 <img
                   src="/servicesphoto/6.png"
                   alt="PLC programming"
-                  className="w-auto h-3/4 border-2 border-black"
+                  className=" w-3/4 sm:w-3/4 md:w-1/2 lg:w-1/3 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-3xl shadow-2xl shadow-black mb-10 md:ml-32"
                 />
               </div>
             </div>
           </div>
         </div>
-
+        {/*  Panel Manufacturer*/}
         <div className="my-10 mx-4">
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+          <span className="font-extrabold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-2 border-black">
             Panel Manufacturer
           </span>
           <div className="font-lora ml-7 mt-6">
-            <div className="flex flex-col sm:flex-row items-center sm:items-start my-8">
-              <div className="sm:w-1/2 sm:mr-10">
+            <div className="flex flex-col sm:flex-row items-center sm:items-start my-8 shadow-inner shadow-black p-7 rounded-3xl font-semibold text-xl bg-gradient-to-r from-blue-500 to-purple-500 ">
+              <div className="sm:w-1/2 sm:mr-10 ">
                 <p>
                   Programmable logic controller (PLC) control panels, also known
                   as PLC Automation Panels, are essential and efficient types of
@@ -422,49 +439,50 @@ export default function Details() {
                 <img
                   src="/servicesphoto/7.png"
                   alt="product"
-                  className="w-auto h-3/4  border-2 border-black my-4"
+                  className="w-auto  h-3/4 transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-xl shadow-2xl shadow-black mb-10 md:ml-32"
                 />
               </div>
             </div>
           </div>
-
+          {/*Panel design, Manufacturing, Software Development & Commissioning for OEMs - */}
           <div className="mt-10">
-            <span className="font-bold text-xl font-lora text-center border-b border-black ml-5">
-              Panel design, Manufacturing, Software Development & Commissioning
-              for OEMs -
-            </span>
-
-            <div className="mt-5">
-              <div className="flex flex-col sm:flex-row items-center sm:justify-between my-8">
-                <p className="mx-10 my-3 font-light font-lora text-xl">
+            <div className="ml-5">
+              <span className="font-semibold text-2xl font-lora text-center border-b-2 border-black ">
+                Panel design, Manufacturing, Software Development &
+                Commissioning for OEMs -
+              </span>
+            </div>
+            <div className="mt-5 mx-8">
+              <div className="flex flex-col sm:flex-row items-center sm:justify-between my-8 shadow-inner shadow-black rounded-3xl md:px-10 md:py-2 px-5 bg-gradient-to-r from-blue-500 to-purple-500">
+                <p className="mx-10 my-3 font-light font-lora text-2xl">
                   Cable Stranding Machine:
                 </p>
                 <img
                   src="/servicesphoto/8.png"
                   alt="product"
-                  className="sm:w-2/5 w-full h-auto border-2 border-black my-4"
+                  className="w-auto  h-3/4 transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-xl shadow-2xl shadow-black  md:ml-32"
                 />
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center sm:justify-between my-8">
-                <p className="mx-10 my-3 font-light font-lora text-xl">
+              <div className="flex flex-col sm:flex-row items-center sm:justify-between my-8 shadow-inner shadow-black rounded-3xl md:px-10 md:py-2 px-5 bg-gradient-to-r from-purple-500 to-blue-500">
+                <p className="mx-10 my-3 font-light font-lora text-2xl">
                   Marble Cutting Machine:
                 </p>
                 <img
                   src="/servicesphoto/9.png"
                   alt="product"
-                  className="sm:w-2/5 w-full h-auto border-2 border-black my-4"
+                  className="w-auto  h-3/4 transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-xl shadow-2xl shadow-black  md:ml-32"
                 />
               </div>
 
-              <div className="flex flex-col sm:flex-row items-center sm:justify-between my-8">
-                <p className="mx-10 my-3 font-light font-lora text-xl">
+              <div className="flex flex-col sm:flex-row items-center sm:justify-between my-8 shadow-inner shadow-black rounded-3xl md:px-10 md:py-2 px-5 bg-gradient-to-r from-blue-500 to-purple-500">
+                <p className="mx-10 my-3 font-light font-lora text-2xl">
                   Marble Polishing Machine:
                 </p>
                 <img
                   src="/servicesphoto/10.png"
                   alt="product"
-                  className="sm:w-2/5 w-full h-auto border-2 border-black my-4"
+                  className="w-auto  h-3/4 transform transition-transform duration-500 ease-in-out hover:scale-110 my-5 rounded-xl shadow-2xl shadow-black  md:ml-32"
                 />
               </div>
             </div>
@@ -473,6 +491,7 @@ export default function Details() {
       </div>
       {/*section 3 Products Catalog (1).pdf kudamn*/}
       <div>
+        {/* Motor Control & Drives*/}
         <div className="px-4 sm:px-8 py-8">
           {/* Heading */}
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
@@ -483,102 +502,105 @@ export default function Details() {
           <img
             src="/motorContolAndDrives.png"
             alt="product"
-            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-9 mx-auto border-4  shadow-2xl shadow-black rounded-3xl "
           />
 
           {/* Grid Layout for Products */}
-          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-2 ">
             {MotorControlAndDriveProd.map((item) => (
               <MotorControlAndDrives
                 key={item.heading}
                 heading={item.heading}
                 details={item.details}
                 liItem={item.liItems}
+                idx={item.idx}
               />
             ))}
           </div>
         </div>
+        {/* Distributed Control Systems (DCS) Heading */}
         <div className="px-4 sm:px-8 py-8">
-          {/* Distributed Control Systems (DCS) Heading */}
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
             Distributed Control Systems (DCS)
           </span>
 
           {/* Image 1 */}
-          <img
-            src="/dcs1.png"
-            alt="product"
-            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black"
-          />
+          <div className="shadow-inner shadow-black  p-5 mt-5 rounded-3xl bg-gradient-to-r from-purple-500 to-blue-500 ">
+            <img
+              src="/dcs1.png"
+              alt="product"
+              className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-12 mx-auto rounded-3xl shadow-2xl shadow-black "
+            />
 
-          {/* Programmable Logic Controllers Heading */}
-          <span className="font-bold text-2xl sm:text-2xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
-            Programmable Logic Controllers:
-          </span>
-
-          {/* Details Section */}
-          <div className="mt-5">
-            <span className="font-lora text-left block ml-4 sm:ml-8 mb-4">
-              AC500 / AC800 SERIES - Reliable, Powerful, Scalable:
+            {/* Programmable Logic Controllers Heading */}
+            <span className="font-bold text-2xl sm:text-2xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
+              Programmable Logic Controllers:
             </span>
 
-            {/* List of Features */}
-            <ul className="ml-6 sm:ml-10 mt-2 list-disc list-inside space-y-2">
-              <li>From 8 to 80,000 I/O</li>
-              <li>No rack required</li>
-              <li>Web Server Integrated</li>
-              <li>IEC61131-3 Standard five IEC programming languages</li>
-              <li>Profinet, EtherCAT, MODBUS-TCP, PROFIBUS</li>
-              <li>Complete Hot-Standby System</li>
-            </ul>
-          </div>
+            {/* Details Section */}
+            <div className="mt-5 ">
+              <span className="font-lora text-left block ml-4 sm:ml-8 mb-4 font-semibold">
+                AC500 / AC800 SERIES - Reliable, Powerful, Scalable:
+              </span>
 
-          {/* Remote I/O System Section */}
-          <div className="my-5">
-            <span className="font-lora text-left block ml-4 sm:ml-8 mb-2">
-              S500/S800 Remote I/O System:
-            </span>
-            <span className="ml-4 sm:ml-8 block">
-              FBP bus module possesses compact construction and versatile
-              flexibility.
-            </span>
-          </div>
-
-          {/* AC500-eco Series Section */}
-          <div className="mt-5">
-            <span className="font-lora text-left block ml-4 sm:ml-8 mb-4">
-              AC500-eco SERIES - Compact Solutions:
-            </span>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {/* List of Features */}
-              <ul className="ml-6 sm:ml-10 list-disc list-inside space-y-2">
-                <li>Cost-effective</li>
-                <li>Fast Counter on On-Board CPU - 50khz</li>
+              <ul className="mx-6 sm:ml-10 mt-2 list-disc list-inside space-y-2 shadow-inner shadow-black p-4 rounded-3xl ">
+                <li>From 8 to 80,000 I/O</li>
                 <li>No rack required</li>
-                <li>Up to 10 I/O modules can be connected to CPU</li>
-                <li>Extensive functional libraries</li>
+                <li>Web Server Integrated</li>
                 <li>IEC61131-3 Standard five IEC programming languages</li>
-                <li>MODBUS-TCP</li>
+                <li>Profinet, EtherCAT, MODBUS-TCP, PROFIBUS</li>
+                <li>Complete Hot-Standby System</li>
               </ul>
+            </div>
 
-              {/* Image 2 */}
-              <img
-                src="/dcs2.png"
-                alt="product"
-                className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black"
-              />
+            {/* Remote I/O System Section */}
+            <div className="my-5">
+              <span className="font-lora text-left block ml-4 sm:ml-8 mb-2 font-semibold">
+                S500/S800 Remote I/O System:
+              </span>
+              <span className="ml-4 sm:ml-8 block">
+                FBP bus module possesses compact construction and versatile
+                flexibility.
+              </span>
+            </div>
+
+            {/* AC500-eco Series Section */}
+            <div className="mt-5">
+              <span className="font-lora font-semibold text-left block ml-4 sm:ml-8 mb-4">
+                AC500-eco SERIES - Compact Solutions:
+              </span>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mx-6 shadow-inner shadow-black p-4 rounded-3xl ">
+                {/* List of Features */}
+                <ul className="ml-6 sm:ml-10 list-disc list-inside space-y-2">
+                  <li>Cost-effective</li>
+                  <li>Fast Counter on On-Board CPU - 50khz</li>
+                  <li>No rack required</li>
+                  <li>Up to 10 I/O modules can be connected to CPU</li>
+                  <li>Extensive functional libraries</li>
+                  <li>IEC61131-3 Standard five IEC programming languages</li>
+                  <li>MODBUS-TCP</li>
+                </ul>
+
+                {/* Image 2 */}
+                <img
+                  src="/dcs2.png"
+                  alt="product"
+                  className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto rounded-xl shadow-2xl shadow-black"
+                />
+              </div>
             </div>
           </div>
         </div>
+        {/* Soft Starters Heading */}
         <div className="px-4 sm:px-8 py-8">
-          {/* Soft Starters Heading */}
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
             Soft Starters:
           </span>
 
           {/* Content Section */}
-          <div className="flex flex-col sm:flex-row mt-3 sm:mx-5">
+          <div className="flex flex-col sm:flex-row mt-3 sm:mx-5 bg-gradient-to-r from-blue-500  to-purple-500 p-5 rounded-3xl shadow-inner shadow-black">
             {/* Text Section */}
             <div className="font-lora flex-1 mb-4 sm:mb-0 sm:mr-6">
               {/* PSR-The compact range */}
@@ -621,26 +643,29 @@ export default function Details() {
             <img
               src="/softStarter.png"
               alt="product"
-              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 mx-auto border-4 border-black"
+              className="w-full sm:w-1/2 md:w-1/2 lg:w-1/2 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 md:mx-4 shadow-2xl shadow-black rounded-3xl"
             />
           </div>
         </div>
+        {/*Process Instruments*/}
         <div>
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
             Process Instruments:
           </span>
-          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 mt-4 mx-5">
             {ProcessInstrumentsprod.map((item) => (
               <ProcessInstruments
                 key={item.heading}
                 heading={item.heading}
                 img={item.img}
                 liItem={item.liItem}
+                idx={item.idx}
               />
             ))}
           </div>
         </div>
         <div>
+          {/* AC Servo Drives*/}
           <div className="my-7">
             <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
               AC Servo Drives:
@@ -649,7 +674,7 @@ export default function Details() {
               <img
                 src="/acServoDrives/1.png"
                 alt="product"
-                className=" w-auto h-auto  border-2 border-black my-6 ml-7"
+                className=" w-1/2 h-auto  transform transition-transform duration-500 ease-in-out hover:scale-110 rounded-2xl shadow-2xl shadow-black my-6 ml-7 "
               />
               <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-2 gap-6">
                 {ACServoDrivesProd.map((prod) => (
@@ -658,16 +683,12 @@ export default function Details() {
               </div>
             </div>
           </div>
+          {/* DVP Series - Modular PLCs:*/}
           <div className="my-7">
             <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
               DVP Series - Modular PLCs:
             </span>
-            <div className="ml-2 sm:ml-5 bg-slate-200 py-4 px-4 sm:py-6 sm:px-6 rounded-lg my-5 shadow-md flex flex-col sm:flex-row items-center">
-              <img
-                src="/acServoDrives/2.png"
-                alt="product"
-                className="w-full sm:w-auto h-auto border-2 border-black my-4 sm:my-6 sm:ml-7 sm:mr-4"
-              />
+            <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
               <div className="my-4 flex flex-col">
                 <ul className="list-disc list-inside mx-2 sm:mx-5 mt-2">
                   {liItem.map((item, index) => (
@@ -677,19 +698,19 @@ export default function Details() {
                   ))}
                 </ul>
               </div>
+              <img
+                src="/acServoDrives/2.png"
+                alt="product"
+                className="w-3/4 sm:w-auto h-auto  transform transition-transform duration-500 ease-in-out hover:scale-110 shadow-2xl shadow-black rounded-3xl my-4 sm:my-6 sm:ml-7 sm:mr-4"
+              />
             </div>
           </div>
-
+          {/*Hybrid Energy System HES Series: */}
           <div className="my-7">
             <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
               Hybrid Energy System HES Series:
             </span>
-            <div className="ml-2 sm:ml-5 bg-slate-200 py-4 px-4 sm:py-6 sm:px-6 rounded-lg my-5 shadow-md flex flex-col sm:flex-row items-center">
-              <img
-                src="/acServoDrives/3.png"
-                alt="product"
-                className="w-full sm:w-auto h-auto border-2 border-black my-4 sm:my-6 sm:ml-7 sm:mr-4"
-              />
+            <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
               <div className="my-4 flex flex-col">
                 <ul className="list-disc list-inside mx-2 sm:mx-5 mt-2">
                   <li>Superior Energy-Saving results</li>
@@ -699,20 +720,20 @@ export default function Details() {
                   <li>Good Frequency Response</li>
                   <li>Suitable For Harsh Environments</li>
                 </ul>
-              </div>
+              </div>{" "}
+              <img
+                src="/acServoDrives/3.png"
+                alt="product"
+                className="w-3/4 sm:w-auto h-auto  transform transition-transform duration-500 ease-in-out hover:scale-110 shadow-2xl shadow-black rounded-3xl my-4 sm:my-6 sm:ml-7 sm:mr-4"
+              />
             </div>
           </div>
-
+          {/* AH 500 PLC Rack type PLC Fully integrated & Software interface:*/}
           <div className="my-7">
             <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
               AH 500 PLC Rack type PLC Fully integrated & Software interface:
             </span>
-            <div className="ml-2 sm:ml-5 bg-slate-200 py-4 px-4 sm:py-6 sm:px-6 rounded-lg my-5 shadow-md flex flex-col sm:flex-row items-center">
-              <img
-                src="/acServoDrives/4.png"
-                alt="product"
-                className="w-full sm:w-auto h-auto border-2 border-black my-4 sm:my-6 sm:ml-7 sm:mr-4"
-              />
+            <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
               <div className="my-4 flex flex-col">
                 <ul className="list-disc list-inside mx-2 sm:mx-5 mt-2">
                   <li>
@@ -742,19 +763,19 @@ export default function Details() {
                   </li>
                 </ul>
               </div>
+              <img
+                src="/acServoDrives/4.png"
+                alt="product"
+                className="w-3/4 sm:w-auto h-auto  transform transition-transform duration-500 ease-in-out hover:scale-110 shadow-2xl shadow-black rounded-3xl my-4 sm:my-6 sm:ml-7 sm:mr-4"
+              />
             </div>
           </div>
-
+          {/*Power Supply (SMPS): */}
           <div className="my-7">
             <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
               Power Supply (SMPS):
             </span>
-            <div className="ml-2 sm:ml-5 bg-slate-200 py-4 px-4 sm:py-6 sm:px-6 rounded-lg my-5 shadow-md flex flex-col sm:flex-row items-center">
-              <img
-                src="/acServoDrives/5.png"
-                alt="product"
-                className="w-full sm:w-auto h-auto border-2 border-black my-4 sm:my-6 sm:ml-7 sm:mr-4"
-              />
+            <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
               <div className="my-4 flex flex-col">
                 <ul className="list-disc list-inside mx-2 sm:mx-5 mt-2">
                   <li>Universal AC Input Expected life time: 10 years</li>
@@ -767,20 +788,20 @@ export default function Details() {
                     Over voltage, Over temperature and Overload protections
                   </li>
                 </ul>
-              </div>
+              </div>{" "}
+              <img
+                src="/acServoDrives/5.png"
+                alt="product"
+                className="w-3/4 sm:w-auto h-auto  transform transition-transform duration-500 ease-in-out hover:scale-110 shadow-2xl shadow-black rounded-3xl my-4 sm:my-6 sm:ml-7 sm:mr-4"
+              />
             </div>
           </div>
-
+          {/* HMI (Human Machine Interface): */}
           <div className="my-7">
             <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black">
               HMI (Human Machine Interface):
             </span>
-            <div className="ml-2 sm:ml-5 bg-slate-200 py-4 px-4 sm:py-6 sm:px-6 rounded-lg my-5 shadow-md flex flex-col sm:flex-row items-center">
-              <img
-                src="/acServoDrives/6.png"
-                alt="product"
-                className="w-full sm:w-auto h-auto border-2 border-black my-4 sm:my-6 sm:ml-7 sm:mr-4"
-              />
+            <div className="mx-2 sm:ml-5 bg-gradient-to-r from-purple-500 to-blue-500 py-4 px-4 sm:py-6 sm:px-6 rounded-3xl my-5  flex flex-col justify-between sm:flex-row items-center shadow-inner shadow-black">
               <div className="my-4 flex flex-col">
                 <ul className="list-disc list-inside mx-2 sm:mx-5 mt-2">
                   <li>
@@ -795,12 +816,18 @@ export default function Details() {
                   </li>
                   <li>Supports Audio Output Interface (MP3, Wav Files)</li>
                 </ul>
-              </div>
+              </div>{" "}
+              <img
+                src="/acServoDrives/6.png"
+                alt="product"
+                className="w-3/4 sm:w-auto h-auto  transform transition-transform duration-500 ease-in-out hover:scale-110 shadow-2xl shadow-black rounded-3xl my-4 sm:my-6 sm:ml-7 sm:mr-4"
+              />
             </div>
           </div>
         </div>
+        {/*levels */}
         <div className="my-8">
-          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 ">
             {levelProd.map((prod) => (
               <Level
                 key={prod.heading}
@@ -812,11 +839,12 @@ export default function Details() {
             ))}
           </div>
         </div>
+        {/* Thermoplastic Enclosures*/}
         <div className="my-8">
           <span className="font-bold text-lg sm:text-2xl text-center border-b border-black bg-lime-500 px-4 py-2 rounded-t-lg block mb-4 sm:mb-6">
             Thermoplastic Enclosures
           </span>
-          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 ">
             {ThermoplasticEnclosuresProd.map((prod) => (
               <ThermoplasticEnclosures
                 key={prod.heading}
@@ -826,56 +854,62 @@ export default function Details() {
             ))}
           </div>
         </div>
+        {/* SomeRandom*/}
         <div className="my-8">
-          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-1 sm:grid-cols-1  lg:grid-cols-3 ">
             {someRandomProd.map((prod) => (
               <SomeRandom
                 key={prod.heading}
                 heading={prod.heading}
                 img={prod.img}
                 liItem={prod.liItem}
+                idx={prod.idx}
               />
             ))}
           </div>
         </div>
-        <div>
+        {/*  Ultrasonic & Special Sensors */}
+        <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
             Ultrasonic & Special Sensors:
           </span>
           <img
             src="/ultrasonicAndSpecialSensors.png"
             alt="product"
-            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black mt-10"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto rounded-3xl mt-10 shadow-2xl shadow-black"
           />
         </div>
-        <div>
+        {/*  Lighting & Indicators*/}
+        <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
             Lighting & Indicators:
           </span>
           <img
             src="/Lighting & Indicators.png"
             alt="product"
-            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black mt-10"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto rounded-3xl mt-10 shadow-2xl shadow-black"
           />
         </div>
-        <div>
+        {/* Vision Sensors*/}
+        <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
             Vision Sensors:
           </span>
           <img
             src="/Vision Sensors.png"
             alt="product"
-            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black mt-10"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto rounded-3xl mt-10 shadow-2xl shadow-black"
           />
         </div>
-        <div>
+        {/* Safety Sensors*/}
+        <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
             Safety Sensors:
           </span>
           <img
             src="/Safety Sensors.png"
             alt="product"
-            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black mt-10"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto rounded-3xl mt-10 shadow-2xl shadow-black"
           />
         </div>
         <div>
@@ -1018,21 +1052,25 @@ export default function Details() {
             </div>
           </div>
         </div>
-        <div>
+        {/* Fuses For All Process Industries*/}
+        <div
+          className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500"
+          v
+        >
           <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b border-black ">
             Fuses For All Process Industries:
           </span>
           <img
             src="/Fuses For All Process Industries.png"
             alt="product"
-            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black mt-10"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto rounded-3xl mt-10 shadow-2xl shadow-black"
           />
         </div>
-        <div>
+        <div className=" shadow-inner shadow-black rounded-3xl p-6 mb-5 bg-gradient-to-r from-blue-500 to-purple-500">
           <img
             src="/Screenshot 2024-09-12 193321.png"
             alt="product"
-            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto border-4 border-black mt-10"
+            className="w-full sm:w-3/4 md:w-1/2 lg:w-9/12 h-auto transform transition-transform duration-500 ease-in-out hover:scale-110 my-6 mx-auto rounded-3xl mt-10 shadow-2xl shadow-black"
           />
         </div>
         <div className="px-4 sm:px-8 lg:px-16 py-8">
