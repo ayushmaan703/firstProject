@@ -48,7 +48,7 @@ export default function Details() {
 
         {/* General Purpose Range */}
         <div className=" mb-3 ml-2 sm:ml-10  rounded-es-3xl rounded-se-3xl p-6">
-          <span className="text-lg  sm:text-xl border-b border-b-black font-bold font-bold">
+          <span className="text-lg  sm:text-xl border-b border-b-black font-bold">
             1. General Purpose Range:
           </span>
           <div className="w-full grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 ">
@@ -203,7 +203,7 @@ export default function Details() {
       {/*section 2*/}
       <div className="mt-3">
         <div>
-          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-2 border-black ">
+          <span className="font-bold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black ">
             Process & Machines Automation Systems :
           </span>
           <div className="shadow-inner shadow-black p-5 my-4 mx-8  rounded-3xl">
@@ -234,8 +234,9 @@ export default function Details() {
             <p>• Hospital/Education Institutes</p>
           </div>
         </div>
+        {/*HARMONICS */}
         <div className="p-3 ml-2 sm:ml-10">
-          <span className="font-bold text-2xl sm:text-4xl  font-lora text-right border-b border-black  ">
+          <span className="font-bold text-2xl sm:text-4xl  font-lora text-right border-b-4 border-black  ">
             HARMONICS :
           </span>
           <div className="w-full flex flex-col md:flex-row items-center shadow-inner shadow-black rounded-3xl p-10 bg-gradient-to-r from-blue-500 to-purple-500 mt-6">
@@ -419,7 +420,7 @@ export default function Details() {
         </div>
         {/*  Panel Manufacturer*/}
         <div className="my-10 mx-4">
-          <span className="font-extrabold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-2 border-black">
+          <span className="font-extrabold text-2xl sm:text-4xl mt-32 sm:mt-20 font-lora text-center border-b-4 border-black">
             Panel Manufacturer
           </span>
           <div className="font-lora ml-7 mt-6">
