@@ -9,12 +9,19 @@ export default {
         montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        customBlue: '#143F6B',
-        customOffwhite: '#EEE2DC',
-        customLightGray: '#A771FD',
-        customLightPurple: '#0677A1',
-        customYellow:"#FAC213",
-        customOrange:"#F76C6C"
+        customBlue: "#143F6B",
+        customOffwhite: "#EEE2DC",
+        customLightGray: "#A771FD",
+        customLightPurple: "#0677A1",
+        customYellow: "#FAC213",
+        customOrange: "#F76C6C",
+      },
+      noScrollbar: {
+        "&::-webkit-scrollbar": {
+          display: "none",
+        },
+        "-ms-overflow-style": "none",
+        "scrollbar-width": "none",
       },
     },
   },
